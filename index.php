@@ -5,61 +5,116 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Home page</title>
-        <meta name="hompage" content="width=device-wigth, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            #navlist{
-                position: relative;
-            }
-            #navlist li {
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                position: absolute;
-                top: 0;
-            }
-            #navlist li, #navlist a{
-                height: 44px;
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {box-sizing: border-box;}
+
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+        }
+
+        .header a {
+            float: left;
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a.logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: dodgerblue;
+            color: white;
+        }
+
+        .header-right {
+            float: right;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header a {
+                float: none;
                 display: block;
+                text-align: left;
             }
-            /*            #home {
-                            left: 0px;
-                            width: 46px;
-                            background: #ff9900;
-                        }*/
-            body {
-                margin: 0;
-                background-color: #ccffcc ;
-                font-family : Arial, Helvetica, sans-serif;
+            .header-right {
+                float: none;
             }
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
 
-            /*Style the header*/ 
-            .header {
-                background: #ff9900;
-                padding: 30px;
-                /*text-align: center;*/
-            }
-        </style>
-    </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
-
-        <!--        <div class="header">
-                    <image src="image/SCSUChampadeeBranding-4.png"
-                           <h1>Header</h1>
-                </div>-->
-        <div class="header">
-            <ul id="navlist"> 
-                <li id="home"> <a href="index.php"> <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="200" height="160"></a> </li>
-            </ul>
+<div class="header">
+    <a href="index.php" class="logo"> <img src="image/SCSUChampadeeBranding-4.png" class="img-responsive"
+                                           alt="ChampadeeShop" width="400" height="200"></a>
+    <div class="header-right">
+        <a class="active" href="#home">Home</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <div class="search-container">
+            <form action="image/icon/png/search.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
         </div>
-    </body>
+    </div>
+</div>
+
+<!--<div class="container">-->
+<!--    <div class="topnav">-->
+<!--        <div class="row">-->
+<!--<!--            <div class="col-xs-3 col-md-3 col-lg-3 ">-->-->
+<!--                <a href="index.php"> <img src="image/SCSUChampadeeBranding-4.png" class="img-responsive"-->
+<!--                                          alt="ChampadeeShop" style="width: 100%"></a>-->
+<!--<!--            </div>-->-->
+<!--<!--            <div class="col-xs-5 col-md-5 col-lg-5 "> -->-->
+<!--                <a class="active" href="#home">Home</a>-->
+<!--<!--            </div>-->-->
+<!--<!--            <div class="col-xs-2 col-md-2 col-lg-2 "> -->-->
+<!--                <a href="#about">About</a>-->
+<!--<!--            </div>-->-->
+<!--<!--            <div class="col-xs-2 col-md-2 col-lg-2 "> -->-->
+<!--                <a href="#contact">Contact</a>-->
+<!--<!--            </div>-->-->
+<!--            <div class="search-container">-->
+<!--                <form action="image/icon/png/search.php">-->
+<!--                    <input type="text" placeholder="Search.." name="search">-->
+<!--                    <button type="submit"><i class="fa fa-search"></i></button>-->
+<!--                </form>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!--        <div class="header">-->
+    <!--            <ul id="navlist"> -->
+    <!--                <li id="home"> <a href="index.php"> <img src="image/SCSUChampadeeBranding-4.png" class="img-responsive" alt="ChampadeeShop" width="200" height="Auto"></a> </li>-->
+    <!--            </ul>-->
+    <!--        </div>-->
+</body>
 </html>
