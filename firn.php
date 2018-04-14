@@ -51,7 +51,7 @@ echo "Hello E-Commerce";
 ?>
 <div class="header">
     <div class="row">
-        <div class="col-xs-3 col-md-3 col-lg-3 " ><img src="logo.png" class="img-responsive"></div>
+        <div class="col-xs-3 col-md-3 col-lg-3 " ><img src="image/SCSUChampadeeBranding-4.png" class="img-responsive"></div>
         <div class="col-xs-5 col-md-5 col-lg-5 " style=" background-color:lavenderblush;">searching</div>
         <div class="col-xs-2 col-md-2 col-lg-2 " style="background-color:lavender;">basket</div>
         <div class="col-xs-2 col-md-2 col-lg-2 "><a href="member.html"><img src="member.png" class="img-responsive"></a></div>

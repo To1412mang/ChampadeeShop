@@ -114,29 +114,36 @@
     }
 
     /* --------------start image slide--------------------------------------------*/
-    .mySlides {display: none}
-    img {vertical-align: middle;}
-
-    /* Slideshow container */
-    .slideshow-container {
-        max-width: 1000px;
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
         position: relative;
-        margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+        cursor: pointer;
     }
 
     /* Next & previous buttons */
-    .prev, .next {
+    .prev,
+    .next {
         cursor: pointer;
         position: absolute;
-        top: 50%;
+        top: 40%;
         width: auto;
         padding: 16px;
-        margin-top: -22px;
+        margin-top: -50px;
         color: white;
         font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
+        font-size: 20px;
         border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
     }
 
     /* Position the "next button" to the right */
@@ -146,19 +153,9 @@
     }
 
     /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-    }
-
-    /* Caption text */
-    .text {
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        bottom: 8px;
-        width: 100%;
-        text-align: center;
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     /* Number text (1/3 etc) */
@@ -168,6 +165,26 @@
         padding: 8px 12px;
         position: absolute;
         top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+        text-align: center;
+        background-color: #222;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+        float: left;
+        width: 16.66%;
     }
 
     /* The dots/bullets/indicators */
@@ -186,47 +203,10 @@
         background-color: #717171;
     }
 
-    /* Fading animation */
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-
-    @-webkit-keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    @keyframes fade {
-        from {opacity: .4}
-        to {opacity: 1}
-    }
-
-    /* On smaller screens, decrease text size */
-    @media only screen and (max-width: 300px) {
-        .prev, .next,.text {font-size: 11px}
-    }
     /* --------------stop image slide--------------------------------------------*/
 
 </style>
 <body>
-<!--<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a href="index.php" class="logo">
-                <img src="image/SCSUChampadeeBranding-4.png" class="img-responsive"
-                                                   alt="ChampadeeShop" width="400" height="160"></a>
-        </div>
-        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-    </div>
-</nav>-->
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -251,36 +231,36 @@
     </div>
 </nav>
 
-<div class="slideshow-container">
+<!--/* --------------start image slide--------------------------------------------*/-->
 
-    <div class="mySlides fade">
+<div class="container">
+    <div class="mySlides">
         <div class="numbertext">1 / 3</div>
-        <img src="/image/Bown+ColourfullChampadeeMug.png" style="width:100%">
-        <div class="text">Bown+ColourfullChampadeeMug</div>
+        <img src="image/Bown+ColourfullChampadeeMug.png"  style="width:100%">
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
         <div class="numbertext">2 / 3</div>
-        <img src="/image/ChampadeeCALICOBAG.png" style="width:100%">
-        <div class="text">ChampadeeCALICOBAG</div>
+        <img src="image/ChampadeeCALICOBAG.png" style="width:100%">
     </div>
 
-    <div class="mySlides fade">
+    <div class="mySlides">
         <div class="numbertext">3 / 3</div>
-        <img src="/image/ChampadeeWATERBOTTLES.png" style="width:100%">
-        <div class="text">ChampadeeWATERBOTTLES</div>
+        <img src="image/ChampadeeWATERBOTTLES.png" style="width:100%">
     </div>
+
+
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
-<br>
+    <br>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 
 <script>
@@ -311,6 +291,5 @@
         dots[slideIndex-1].className += " active";
     }
 </script>
-
 </body>
 </html>
