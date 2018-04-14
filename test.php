@@ -25,9 +25,12 @@
         img {
             vertical-align: middle;
         }
-        a {
+
+        a{
             text-align: center;
+            /*text-decoration: overline;*/
         }
+
 
         /* --------------start image slide--------------------------------------------*/
         /* Position the image container (needed to position the left and right arrows) */
