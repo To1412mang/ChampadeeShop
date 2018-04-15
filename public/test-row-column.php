@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Responsive Image Gallery</title>
     <style>
         div.gallery {
             border: 1px solid #ccc;
