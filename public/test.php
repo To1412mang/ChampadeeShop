@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>TEST</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -14,7 +14,7 @@
         }
 
         body {
-            font-family: Fixedsys Regular,Verdana, sans-serif,  Silapakorn72;
+            font-family: Silapakorn72,Fixedsys Regular,Verdana, sans-serif  ;
             margin: 0
         }
 
@@ -100,7 +100,73 @@
         .active, .dot:hover {
             background-color: #717171;
         }
-        /* --------------stop image slide--------------------------------------------*/
+        /* -----------------------------------stop image slide--------------------------------------------*/
+
+        /* -------------------------------------start search--------------------------------------------*/
+        input[type=text] {
+            width: 50%;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('http://localhost/ChampadeeShop/image/icon/search/002-searching-magnifying-glass.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+        }
+
+        /* ---------------------------------------stop search--------------------------------------------*/
+
+        <!--/* -----------------------------------start image Gallery--------------------------------------------*/-->
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        <!--/* -----------------------------------End image Gallery--------------------------------------------*/-->
+
 
     </style>
 </head>
@@ -133,7 +199,14 @@
                 </li>
                 <li><a href="#">Page 2</a></li>
             </ul>
-            <form class="navbar-form navbar-left" action="/action_page.php">
+
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img src="image/icon/png/shop.png" width="30px"> </a></li>
+                <li><a href="login.php"><img src="image/chamdee-head1.png" width="60px"></a></li>
+            </ul>
+            <!--/* --------------------------------------Start Search--------------------------------------------*/-->
+            <!--<form class="navbar-form navbar-left" action="/action_page.php">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search" name="search">
                     <div class="input-group-btn">
@@ -143,11 +216,13 @@
                     </div>
                 </div>
 
+            </form>-->
+            <form>
+                <input type="text" name="search" placeholder="Search..">
             </form>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="image/icon/png/shop.png" width="30px"> </a></li>
-                <li><a href="login.php"><img src="image/chamdee-head1.png" width="60px"></a></li>
-            </ul>
+
+            <!--/* --------------------------------------Stop Search--------------------------------------------*/-->
+
         </div>
     </div>
 </nav>
@@ -196,6 +271,85 @@
     </div>
 
 </div>
+<!--/* -----------------------------------End image slide--------------------------------------------*/-->
+
+<!--/* -----------------------------------start image Gallery--------------------------------------------*/-->
+<br>
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/Bown+ColourfullChampadeeMug.png">
+            <img src="image/Bown+ColourfullChampadeeMug.png" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/BownChampadeeMug.png">
+            <img src="image/BownChampadeeMug.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/ChampadeeCALICOBAG.png">
+            <img src="image/ChampadeeCALICOBAG.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/ChampadeeWATERBOTTLES.png">
+            <img src="image/ChampadeeWATERBOTTLES.png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/ColourfullChampadeeMug.png">
+            <img src="image/ColourfullChampadeeMug.png" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/SCSUChampadeeBranding-1.png">
+            <img src="image/SCSUChampadeeBranding-1.png" alt="Trolltunga Norway" width="300" height="200">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/SCSUChampadeeBranding-1.png">
+            <img src="image/SCSUChampadeeBranding-1.png" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<div class="responsive">
+    <div class="gallery">
+        <a target="_blank" href="image/SCSUChampadeeBranding-1.png">
+            <img src="image/SCSUChampadeeBranding-1.png" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+</div>
+
+<!--/* -----------------------------------End image Gallery--------------------------------------------*/-->
 
 <script>
     var slideIndex = 1;

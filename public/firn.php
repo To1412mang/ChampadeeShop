@@ -1,7 +1,7 @@
 
 <html lang="en">
 <head>
-    <title>ChampaDee Shop HomePage</title>
+    <title>Firn</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -16,7 +16,6 @@
         padding-right:15px;
         width=100%;
     }
-
 
     .tab{
         border: 1px solid gray;
@@ -44,7 +43,6 @@
     }
 
 </style>
-
 <body>
 <?php
 echo "Hello E-Commerce";

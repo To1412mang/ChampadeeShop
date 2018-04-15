@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Bootstrap Example</title>
+    <title>TEST 2</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -114,6 +114,7 @@
     }
 
     /* --------------start image slide--------------------------------------------*/
+
     /* Position the image container (needed to position the left and right arrows) */
     .container {
         position: relative;
