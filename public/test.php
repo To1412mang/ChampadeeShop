@@ -14,7 +14,7 @@
         }
 
         body {
-            font-family: Silapakorn72,Fixedsys Regular,Verdana, sans-serif  ;
+            font-family: Silapakorn72, Fixedsys Regular, Verdana, sans-serif;
             margin: 0
         }
 
@@ -26,11 +26,10 @@
             vertical-align: middle;
         }
 
-        a{
+        a {
             text-align: center;
             /*text-decoration: overline;*/
         }
-
 
         /* --------------start image slide--------------------------------------------*/
         /* Position the image container (needed to position the left and right arrows) */
@@ -44,7 +43,6 @@
         .mySlides {
             display: none;
         }
-
 
         /* Next & previous buttons */
         .prev,
@@ -84,7 +82,6 @@
             top: 0;
         }
 
-
         /* The dots/bullets/indicators */
         .dot {
             cursor: pointer;
@@ -100,6 +97,7 @@
         .active, .dot:hover {
             background-color: #717171;
         }
+
         /* -----------------------------------stop image slide--------------------------------------------*/
 
         /* -------------------------------------start search--------------------------------------------*/
@@ -118,7 +116,8 @@
 
         /* ---------------------------------------stop search--------------------------------------------*/
 
-        <!--/* -----------------------------------start image Gallery--------------------------------------------*/-->
+        <!-- /* -----------------------------------start image Gallery--------------------------------------------*/
+        -->
         div.gallery {
             border: 1px solid #ccc;
         }
@@ -165,7 +164,9 @@
             display: table;
             clear: both;
         }
-        <!--/* -----------------------------------End image Gallery--------------------------------------------*/-->
+
+        <!-- /* -----------------------------------End image Gallery--------------------------------------------*/
+        -->
 
 
     </style>
@@ -184,17 +185,30 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="index.php" class="navbar-brand"  >Champadee Shop</a>
+            <a href="index.php" class="navbar-brand">Champadee Shop</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
+                <li class="active"><a href="#">หน้าแรก</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ประเภท<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Page 1-1</a></li>
-                        <li><a href="#">Page 1-2</a></li>
-                        <li><a href="#">Page 1-3</a></li>
+                        <li><a href="#">แก้วน้ำ</a></li>
+                        <li><a href="#">เสื้อ</a></li>
+                        <li><a href="#">กระบอกน้ำ</a></li>
+
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">อุปกรณ์การเรียน<span
+                                        class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">ปากกา</a></li>
+                                <li><a href="#">สมุด</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">ขนม</a></li>
+                        <li><a href="#">ยาทาเล็บ</a></li>
+
                     </ul>
                 </li>
                 <li><a href="#">Page 2</a></li>
@@ -234,7 +248,7 @@
 <div class="container">
     <div class="mySlides">
         <div class="numbertext">1 / 5</div>
-        <img src="image/Bown+ColourfullChampadeeMug.png"  style="width:100%">
+        <img src="image/Bown+ColourfullChampadeeMug.png" style="width:100%">
     </div>
 
     <div class="mySlides">
