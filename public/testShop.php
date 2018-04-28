@@ -10,8 +10,14 @@
     <style>
 
 
-        body {font-family: Arial, Helvetica, sans-serif;}
-        * {box-sizing: border-box}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+
+        }
 
         /* Start Account Register */
 
@@ -44,7 +50,7 @@
         }
 
         .cancelbtn, .signupbtn:hover {
-            opacity:1;
+            opacity: 1;
         }
 
         /* Extra styles for the cancel button */
@@ -124,17 +130,17 @@
 
         /* End Account Register */
 
-
-
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
             margin-bottom: 50px;
             border-radius: 0;
+
         }
 
         /* Remove the jumbotron's default bottom margin */
         .jumbotron {
             margin-bottom: 0;
+            background: #fff5cc;
         }
 
         /* Add a gray background color and some padding to the footer */
@@ -148,8 +154,8 @@
             max-width: 300px;
             height: auto;
         }
-        /* --------------start image slide--------------------------------------------*/
 
+        /* --------------start image slide--------------------------------------------*/
 
         /* Position the image container (needed to position the left and right arrows) */
         .container1 {
@@ -222,6 +228,30 @@
 
         /* -----------------------------------stop image slide--------------------------------------------*/
 
+        .container-fluid{
+            background: #ffcc00;
+        }
+
+        .responsive-1 {
+            width: 100%;
+            max-width:90px;
+            height: auto;
+            margin-right: 10px;
+            display: block;
+            /*margin-left: 10px;*/
+            /*margin-right: auto;*/
+            position: relative;
+        }
+
+        .collapse {
+            margin-top: 10px;
+        }
+
+        .navbar-toggle{
+             margin-top: 20px;
+         }
+
+
     </style>
 </head>
 <body>
@@ -231,7 +261,7 @@
         <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
         <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500" height="250" class="responsive">
         <br><br>
-        <p>Champadee Shop</p>
+        <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
@@ -243,19 +273,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Logo</a>
+            <a href="#"> <img src="image/logo-1.png" class="responsive-1" ></a>
+<!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Deals</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="active"><a href="#" class="A" >Home</a></li>
+                <li><a href="#" >Products</a></li>
+                <li><a href="#" >Deals</a></li>
+                <li><a href="#" >Stores</a></li>
+                <li><a href="#" >Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" ><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
+                                class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
     </div>
@@ -312,52 +344,60 @@
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-danger">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-success">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
     </div>
-</div><br>
+</div>
+<br>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
         <div class="col-sm-4">
             <div class="panel panel-primary">
                 <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
                 <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
             </div>
         </div>
     </div>
-</div><br><br>
+</div>
+<br><br>
 
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
@@ -369,7 +409,8 @@
 
 <!-- Start Account Register -->
 <div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
     <form class="modal-content" action="/action_page.php">
         <div class="container">
             <h1>Sign Up</h1>
@@ -391,7 +432,9 @@
             <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
             <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                    Cancel
+                </button>
                 <button type="submit" class="signupbtn">Sign Up</button>
             </div>
         </div>
@@ -401,17 +444,19 @@
 <!-- End Account Register -->
 
 <script>
-    // <!-- Start Account Register -->
+    //
+    <!-- Start Account Register -->
     // Get the modal
     var modal = document.getElementById('id01');
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
-    // <!-- End Account Register -->
+    //
+    <!-- End Account Register -->
 
 
     var slideIndex = 1;
