@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
 
@@ -285,16 +285,20 @@
 
         /*--------------- Start Top --------------*/
 
+        .buttonTop {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
         #myBtn {
             display: none;
             position: fixed;
             bottom: 20px;
             right: 30px;
             z-index: 99;
-            font-size: 18px;
+            font-size: 22px;
             border: none;
             outline: none;
-            background-color: red;
+            background-color: #ff6600;
             color: white;
             cursor: pointer;
             padding: 15px;
@@ -302,7 +306,7 @@
         }
 
         #myBtn:hover {
-            background-color: #555;
+            background-color: #b3b3b3;
         }
 
         /*--------------- End Top --------------*/
@@ -546,7 +550,7 @@
 
 <!-------------- Start Top ----------------->
 
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
 
 <!-------------- End Top ----------------->
 
