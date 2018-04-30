@@ -1,42 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TEST</title>
+    <title>TestRow</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        * {
-            box-sizing: border-box
-        }
 
         body {
-            font-family: Silapakorn72, Fixedsys Regular, Verdana, sans-serif;
-            margin: 0
+            font-family: "TH Sarabun New", Arial, Helvetica, sans-serif;
+
         }
 
-        .mySlides {
-            display: none
+        * {
+            box-sizing: border-box;
+
         }
 
-        img {
-            vertical-align: middle;
+        /* Start Account Register */
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
         }
 
-        a {
-            text-align: center;
-            /*text-decoration: overline;*/
+        /* Add a background color when the inputs get focus */
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for all buttons */
+        .cancelbtn, .signupbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .cancelbtn, .signupbtn:hover {
+            opacity: 1;
+        }
+
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+
+        /* Float cancel and signup buttons and add an equal width */
+        .cancelbtn, .signupbtn {
+            float: left;
+            width: 50%;
+        }
+
+        /* Add padding to container elements */
+        .container2 {
+            padding: 5px;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: #ffeb99;
+            padding-top: 50px;
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            /*background-color: #fefefe;*/
+            margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+            border: 1px solid #888;
+            width: 100%; /* Could be more or less, depending on screen size */
+        }
+
+        /* Style the horizontal ruler */
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        /* The Close Button (x) */
+        .close {
+            position: absolute;
+            right: 35px;
+            top: 15px;
+            font-size: 40px;
+            font-weight: bold;
+            /*color: #f1f1f1;*/
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #ff0000;
+            cursor: pointer;
+        }
+
+        /* Clear floats */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* Change styles for cancel button and signup button on extra small screens */
+        @media screen and (max-width: 400px) {
+            .cancelbtn, .signupbtn {
+                width: 100%;
+            }
+        }
+
+        /* End Account Register */
+
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+            font-size: 14pt;
+
+
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+            background: #fff5cc;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+
+        .responsive {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
         }
 
         /* --------------start image slide--------------------------------------------*/
+
         /* Position the image container (needed to position the left and right arrows) */
-        .container {
+        .container1 {
             position: relative;
-            width: 100%;
+            width: 50%;
             max-width: 400px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+
         }
 
         /* Hide the images by default */
@@ -59,6 +192,7 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
             -webkit-user-select: none;
+            text-decoration: none;
         }
 
         /* Position the "next button" to the right */
@@ -70,12 +204,14 @@
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover,
         .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: white;
         }
 
         /* Number text (1/3 etc) */
         .numbertext {
-            color: #f2f2f2;
+            color: #ffcc00;
             font-size: 12px;
             padding: 8px 12px;
             position: absolute;
@@ -100,82 +236,112 @@
 
         /* -----------------------------------stop image slide--------------------------------------------*/
 
-        /* -------------------------------------start search--------------------------------------------*/
-        input[type=text] {
-            width: 50%;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-            background-color: white;
-            background-image: url('http://localhost/ChampadeeShop/image/icon/search/002-searching-magnifying-glass.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 40px;
+        .container-fluid {
+            background: #ffcc00;
+            font-weight: bold;
+            font-size: 24px;
+
         }
 
-        /* ---------------------------------------stop search--------------------------------------------*/
-
-        <!-- /* -----------------------------------start image Gallery--------------------------------------------*/
-        -->
-        div.gallery {
-            border: 1px solid #ccc;
-        }
-
-        div.gallery:hover {
-            border: 1px solid #777;
-        }
-
-        div.gallery img {
+        .responsive-1 {
             width: 100%;
+            max-width: 90px;
             height: auto;
+            margin-right: 10px;
+            display: block;
+            /*margin-left: 10px;*/
+            /*margin-right: auto;*/
+            position: relative;
         }
 
+        .collapse {
+            margin-top: 10px;
+        }
+
+        /* คำอธิบายใต้ภาพ */
         div.desc {
-            padding: 15px;
+            /*padding: 15px;*/
             text-align: center;
+            margin-bottom: 30px;
+            text-decoration: none;
+            font-size: 16pt;
+
         }
 
-        * {
-            box-sizing: border-box;
+        .A, .A:hover {
+            text-decoration: none;
+            color: #ffcc00;
         }
 
-        .responsive {
-            padding: 0 6px;
-            float: left;
-            width: 24.99999%;
+        /* End คำอธิบายใต้ภาพ */
+
+        .navbar-toggle {
+            margin-top: 20px;
         }
 
-        @media only screen and (max-width: 700px) {
-            .responsive {
-                width: 49.99999%;
-                margin: 6px 0;
-            }
+        h2 {
+            font-size: 16pt;
         }
 
-        @media only screen and (max-width: 500px) {
-            .responsive {
-                width: 100%;
-            }
+        /*--------------- Start Top --------------*/
+
+        .buttonTop {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
         }
 
-        .clearfix:after {
-            content: "";
-            display: table;
-            clear: both;
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 22px;
+            border: none;
+            outline: none;
+            background-color: #ff6600;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
         }
 
-        <!-- /* -----------------------------------End image Gallery--------------------------------------------*/-->
+        #myBtn:hover {
+            background-color: #b3b3b3;
+        }
 
+        /*--------------- End Top --------------*/
+
+        /* ---------------- Start Footer -------------------*/
+
+        img.sc{
+            border-radius: 10px;
+        }
+
+        /*h2{*/
+        /*font-size: 18pt;*/
+        /*}*/
+        h3{
+            font-size: 20pt;
+        }
+
+        /* ---------------- End Footer -------------------*/
 
     </style>
 </head>
-
 <body>
 
-<!--/* --------------------------------------Start header--------------------------------------------*/-->
+<div class="jumbotron">
+    <div class="container2 text-center">
+        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
+        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
+             class="responsive">
+        <!--        <br><br>-->
+        <!--        <p>Champadee Shop</p>-->
+    </div>
+</div>
 
-<nav class="navbar navbar-inverse">
+<!---------------------------------- Start header ----------------------------------------------->
+<nav class="navbar navbar-inverse" >
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -183,68 +349,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-
-            <a href="index.php" class="navbar-brand">Champadee Shop</a>
+            <a href="testShop.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">หน้าแรก</a></li>
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">ประเภท<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">แก้วน้ำ</a></li>
-                        <li><a href="#">เสื้อ</a></li>
-                        <li><a href="#">กระบอกน้ำ</a></li>
+                <li class="active"><a href="testShop.php" class="B">หน้าแรก</a></li>
+                <li><a href="#" class="B">ประเภทสินค้า</a></li>
 
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">อุปกรณ์การเรียน<span
-                                        class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">ปากกา</a></li>
-                                <li><a href="#">สมุด</a></li>
-                            </ul>
-                        </li>
+                <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
+                <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
+                <!--                <li><a href="#" class="B">Contact</a></li>-->
 
-                        <li><a href="#">ขนม</a></li>
-                        <li><a href="#">ยาทาเล็บ</a></li>
-
-                    </ul>
-                </li>
-                <li><a href="#">Page 2</a></li>
             </ul>
-
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><img src="image/icon/png/shop.png" width="30px"> </a></li>
-                <li><a href="login.php"><img src="image/chamdee-head1.png" width="60px"></a></li>
+                <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
+                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
             </ul>
-            <!--/* --------------------------------------Start Search--------------------------------------------*/-->
-            <!--<form class="navbar-form navbar-left" action="/action_page.php">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search" name="search">
-                    <div class="input-group-btn">
-                        <button class="btn btn-default" type="submit">
-                            <i class="glyphicon glyphicon-search"></i>
-                        </button>
-                    </div>
-                </div>
-
-            </form>-->
-            <form>
-                <input type="text" name="search" placeholder="Search..">
-            </form>
-
-            <!--/* --------------------------------------Stop Search--------------------------------------------*/-->
-
         </div>
     </div>
 </nav>
 
-<!--/* ------------------------------------------End header--------------------------------------------*/-->
+<!---------------------------------- End header ----------------------------------------------->
 
 <!--/* -----------------------------------start image slide--------------------------------------------*/-->
 
-<div class="container">
+<div class="container1">
+
     <div class="mySlides">
         <div class="numbertext">1 / 5</div>
         <img src="image/Bown+ColourfullChampadeeMug.png" style="width:100%">
@@ -286,119 +419,182 @@
 </div>
 <!--/* -----------------------------------End image slide--------------------------------------------*/-->
 
-<!--/* -----------------------------------start image Gallery--------------------------------------------*/-->
 <br>
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/Bown+ColourfullChampadeeMug.png">
-            <img src="image/Bown+ColourfullChampadeeMug.png" alt="Trolltunga Norway" width="300" height="200">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
     </div>
 </div>
-
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/BownChampadeeMug.png">
-            <img src="image/BownChampadeeMug.png" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/ChampadeeCALICOBAG.png">
-            <img src="image/ChampadeeCALICOBAG.png" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/ChampadeeWATERBOTTLES.png">
-            <img src="image/ChampadeeWATERBOTTLES.png" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
-
 <br>
 
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/ColourfullChampadeeMug.png">
-            <img src="image/ColourfullChampadeeMug.png" alt="Mountains" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
+<br><br>
+
+<!-------------------------------- Start Footer ----------------------------->
+<footer class="container-fluid text-center">
+    <!--    <p>Online Store Copyright</p>-->
+    <!--    <form class="form-inline">Get deals:-->
+    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
+    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
+    <!--    </form>-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>ที่อยู่</h3>
+                <h2>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ <br>อำเภอเมือง จังหวัดนครปฐม 73000
+                </h2>
+            </div>
+
+            <div class="col-sm-3">
+                <h3>เบอร์โทร</h3>
+                <h2>เบอร์โทรศัพท์กลาง : (+66-34) 245300 <br>โทรสาร : (+66-34) 245333</h2>
+            </div>
+
+            <div class="col-sm-3">
+                <h3>ช่องทางติดต่อ</h3>
+                <h2>E-mail : science@su.sc.th</h2>
+                <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
+                <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
+
+
+            </div>
+
+            <div class="col-sm-3">
+                <h3>ช่องทางชำระเงิน</h3>
+                <img src="image/icon/krung.jpg" height="50px" width="Auto">
+                <img src="image/icon/KTB.jpg" height="50px" width="Auto">
+                <h3>บริการจัดส่ง</h3>
+                <img src="image/icon/pn.jpg" height="50px" width="Auto">
+            </div>
+        </div>
     </div>
+    <h4>Online Store Copyright by SCSU</h4>
+</footer>
+<!-------------------------------- End Footer ----------------------------->
+
+<!-- Start Account Register -->
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+          title="Close Modal">&times;</span>
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
+                    Cancel
+                </button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+        </div>
+    </form>
 </div>
 
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/SCSUChampadeeBranding-1.png">
-            <img src="image/SCSUChampadeeBranding-1.png" alt="Trolltunga Norway" width="300" height="200">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
+<!-- End Account Register -->
 
+<!-------------- Start Top ----------------->
 
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/SCSUChampadeeBranding-1.png">
-            <img src="image/SCSUChampadeeBranding-1.png" alt="Forest" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
+<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
 
-<div class="responsive">
-    <div class="gallery">
-        <a target="_blank" href="image/SCSUChampadeeBranding-1.png">
-            <img src="image/SCSUChampadeeBranding-1.png" alt="Northern Lights" width="600" height="400">
-        </a>
-        <div class="desc">Add a description of the image here</div>
-    </div>
-</div>
+<!-------------- End Top ----------------->
 
-<!--/* -----------------------------------End image Gallery--------------------------------------------*/-->
 
 <script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
+    //
+    <!-- Start Account Register -->
+    // Get the modal
+    var modal = document.getElementById('id01');
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
     }
+    //
+    <!-- End Account Register -->
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
 </script>
-
 </body>
 </html>
-
