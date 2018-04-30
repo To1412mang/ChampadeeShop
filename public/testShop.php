@@ -9,9 +9,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
 
-
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "TH Sarabun New",Arial, Helvetica, sans-serif;
+
+
         }
 
         * {
@@ -40,7 +41,7 @@
         /* Set a style for all buttons */
         .cancelbtn, .signupbtn {
             background-color: #4CAF50;
-            color: white;
+            color: white;  
             padding: 14px 20px;
             margin: 8px 0;
             border: none;
@@ -66,8 +67,8 @@
         }
 
         /* Add padding to container elements */
-        .container {
-            padding: 16px;
+        .container2 {
+            padding: 5px;
         }
 
         /* The Modal (background) */
@@ -80,13 +81,13 @@
             width: 100%; /* Full width */
             height: 100%; /* Full height */
             overflow: auto; /* Enable scroll if needed */
-            background-color: #474e5d;
+            background-color: #ffeb99;
             padding-top: 50px;
         }
 
         /* Modal Content/Box */
         .modal-content {
-            background-color: #fefefe;
+            /*background-color: #fefefe;*/
             margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
             border: 1px solid #888;
             width: 100%; /* Could be more or less, depending on screen size */
@@ -105,12 +106,12 @@
             top: 15px;
             font-size: 40px;
             font-weight: bold;
-            color: #f1f1f1;
+            /*color: #f1f1f1;*/
         }
 
         .close:hover,
         .close:focus {
-            color: #f44336;
+            color: #ff0000;
             cursor: pointer;
         }
 
@@ -134,6 +135,7 @@
         .navbar {
             margin-bottom: 50px;
             border-radius: 0;
+            font-size: 14pt;
 
         }
 
@@ -165,6 +167,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+
         }
 
         /* Hide the images by default */
@@ -187,6 +190,7 @@
             border-radius: 0 3px 3px 0;
             user-select: none;
             -webkit-user-select: none;
+            text-decoration: none;
         }
 
         /* Position the "next button" to the right */
@@ -198,12 +202,14 @@
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover,
         .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+            background-color: rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            color: white;
         }
 
         /* Number text (1/3 etc) */
         .numbertext {
-            color: #f2f2f2;
+            color: #ffcc00;
             font-size: 12px;
             padding: 8px 12px;
             position: absolute;
@@ -228,13 +234,15 @@
 
         /* -----------------------------------stop image slide--------------------------------------------*/
 
-        .container-fluid{
+        .container-fluid {
             background: #ffcc00;
+            font-weight: bold;
+            font-size: 24px;
         }
 
         .responsive-1 {
             width: 100%;
-            max-width:90px;
+            max-width: 90px;
             height: auto;
             margin-right: 10px;
             display: block;
@@ -247,24 +255,45 @@
             margin-top: 10px;
         }
 
+
+
+        /* คำอธิบายใต้ภาพ */
+        div.desc {
+            /*padding: 15px;*/
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: none;
+            font-size: 16pt;
+
+        }
+
+        .A, .A:hover {
+            text-decoration: none;
+            color: #ffcc00;
+        }
+        /* End คำอธิบายใต้ภาพ */
+
         .navbar-toggle{
-             margin-top: 20px;
-         }
+            margin-top: 20px;
+        }
 
-
+        /*.navbar-nav{*/
+            /*color: #4CAF50;*/
+        /*}*/
     </style>
 </head>
 <body>
 
 <div class="jumbotron">
-    <div class="container text-center">
+    <div class="container2 text-center">
         <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500" height="250" class="responsive">
-        <br><br>
+        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px" class="responsive">
+<!--        <br><br>-->
         <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
+<!---------------------------------- Start header ----------------------------------------------->
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -273,25 +302,27 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#"> <img src="image/logo-1.png" class="responsive-1" ></a>
-<!--            <a class="navbar-brand" href="#">Logo</a>-->
+            <a href="testShop.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#" class="A" >Home</a></li>
-                <li><a href="#" >Products</a></li>
-                <li><a href="#" >Deals</a></li>
-                <li><a href="#" >Stores</a></li>
-                <li><a href="#" >Contact</a></li>
+                <li class="active"><a href="testShop.php" class="B">Home</a></li>
+                <li><a href="#" class="B">Products</a></li>
+                <li><a href="#" class="B">Deals</a></li>
+                <li><a href="#" class="B">Stores</a></li>
+                <li><a href="#" class="B">Contact</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
+                <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
                                 class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#" ><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
     </div>
 </nav>
+
+<!---------------------------------- End header ----------------------------------------------->
 
 <!--/* -----------------------------------start image slide--------------------------------------------*/-->
 
@@ -341,30 +372,72 @@
 <br>
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
-            <div class="panel panel-primary">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
         </div>
-        <div class="col-sm-4">
-            <div class="panel panel-danger">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
         </div>
-        <div class="col-sm-4">
-            <div class="panel panel-success">
-                <div class="panel-heading">BLACK FRIDAY DEAL</div>
-                <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive"
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>
-            </div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
         </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
     </div>
 </div>
 <br>
@@ -397,8 +470,10 @@
         </div>
     </div>
 </div>
+
 <br><br>
 
+<!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
     <p>Online Store Copyright</p>
     <form class="form-inline">Get deals:
@@ -406,6 +481,7 @@
         <button type="button" class="btn btn-danger">Sign Up</button>
     </form>
 </footer>
+<!-------------------------------- End Footer ----------------------------->
 
 <!-- Start Account Register -->
 <div id="id01" class="modal">

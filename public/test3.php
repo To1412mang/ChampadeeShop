@@ -1,146 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>TEST 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+        .dropdown-submenu {
+            position: relative;
         }
 
-        .topnav {
-            overflow: hidden;
-            background-color: #333;
-        }
-
-        .topnav a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 17px;
-        }
-
-        .topnav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        .active {
-            background-color: #4CAF50;
-            color: white;
-        }
-
-        .topnav .icon {
-            display: none;
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav a:not(:first-child) {
-                display: none;
-            }
-
-            .topnav a.icon {
-                float: right;
-                display: block;
-            }
-        }
-
-        @media screen and (max-width: 600px) {
-            .topnav.responsive {
-                position: relative;
-            }
-
-            .topnav.responsive .icon {
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-
-            .topnav.responsive a {
-                float: none;
-                display: block;
-                text-align: left;
-            }
-
-            .topnav .search-container {
-                float: none;
-            }
-
-            .topnav a, .topnav input[type=text], .topnav .search-container button {
-                float: none;
-                display: block;
-                text-align: left;
-                width: 100%;
-                margin: 0;
-                padding: 14px;
-            }
-
-            .topnav input[type=text] {
-                border: 1px solid #ccc;
-            }
-        }
-
-        .topnav .search-container {
-            float: right;
-        }
-
-        .topnav input[type=text] {
-            padding: 6px;
-            margin-top: 8px;
-            font-size: 17px;
-            border: none;
-        }
-
-        .topnav .search-container button {
-            float: right;
-            padding: 6px 10px;
-            margin-top: 8px;
-            margin-right: 16px;
-            background: #ddd;
-            font-size: 17px;
-            border: none;
-            cursor: pointer;
-        }
-
-        .topnav .search-container button:hover {
-            background: #ccc;
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
         }
     </style>
 </head>
 <body>
 
-<div class="topnav" id="myTopnav">
-    <a href="#home" class="active">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <div class="search-container">
-        <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search">
-            <button type="submit"><img src="image/icon/png/045-search-2.png"></button>
-        </form>
+<div class="container">
+    <h2>Multi-Level Dropdowns</h2>
+    <p>In this example, we have created a .dropdown-submenu class for multi-level dropdowns (see style section above).</p>
+    <p>Note that we have added jQuery to open the multi-level dropdown on click (see script section below).</p>
+    <div class="dropdown">
+        <button data-toggle="dropdown">Tutorials<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                    <li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="test" href="#">Another dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">3rd level dropdown</a></li>
+                            <li><a href="#">3rd level dropdown</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </div>
 </div>
 
-<div style="padding-left:16px">
-    <h2>Responsive Topnav Example</h2>
-    <p>Resize the browser window to see how it works.</p>
-</div>
+
 
 <script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-            x.className += " responsive";
-        } else {
-            x.className = "topnav";
-        }
-    }
+    $(document).ready(function(){
+        $('.dropdown-submenu a.test').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
 </script>
 
 </body>

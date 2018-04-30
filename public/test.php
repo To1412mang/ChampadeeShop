@@ -325,6 +325,8 @@
     </div>
 </div>
 
+<br>
+
 <div class="responsive">
     <div class="gallery">
         <a target="_blank" href="image/ColourfullChampadeeMug.png">

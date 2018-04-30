@@ -321,7 +321,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
-                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
+                            class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
             </ul>
         </div>
@@ -388,65 +388,7 @@
         </div>
 
 
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
 
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-    </div>
-</div>
-<br>
 
 <br><br>
 
