@@ -138,7 +138,6 @@
             border-radius: 0;
             font-size: 14pt;
 
-
         }
 
         /* Remove the jumbotron's default bottom margin */
@@ -282,6 +281,32 @@
         h2 {
             font-size: 14pt;
         }
+
+        /*--------------- Start Top --------------*/
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+        }
+
+        /*--------------- End Top --------------*/
+
+
     </style>
 </head>
 <body>
@@ -297,7 +322,7 @@
 </div>
 
 <!---------------------------------- Start header ----------------------------------------------->
-<nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -321,7 +346,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
-                            class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
+                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
             </ul>
         </div>
@@ -387,7 +412,15 @@
             </a>
         </div>
 
-
+        <div class="col-sm-6">
+            <a href="test.php" class="A">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+    </div>
+</div>
 
 
 <br><br>
@@ -403,7 +436,8 @@
         <div class="row">
             <div class="col-sm-3">
                 <h1>ที่อยู่</h1>
-                <h2>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ <br>อำเภอเมือง จังหวัดนครปฐม 73000</h2>
+                <h2>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ <br>อำเภอเมือง จังหวัดนครปฐม 73000
+                </h2>
             </div>
 
             <div class="col-sm-3">
@@ -461,6 +495,12 @@
 
 <!-- End Account Register -->
 
+<!-------------- Start Top ----------------->
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<!-------------- End Top ----------------->
+
 <script>
     //
     <!-- Start Account Register -->
@@ -510,6 +550,29 @@
     }
 
     // end Image slide
+
+    //    ----------- Start Top -------------
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    //    ----------- End Top -------------
 
 
 </script>
