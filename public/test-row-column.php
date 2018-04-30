@@ -280,7 +280,7 @@
         }
 
         h2 {
-            font-size: 14pt;
+            font-size: 16pt;
         }
 
         /*--------------- Start Top --------------*/
@@ -310,6 +310,21 @@
         }
 
         /*--------------- End Top --------------*/
+
+        /* ---------------- Start Footer -------------------*/
+
+        img.sc{
+            border-radius: 10px;
+        }
+
+        /*h2{*/
+            /*font-size: 18pt;*/
+        /*}*/
+        h3{
+            font-size: 20pt;
+        }
+
+        /* ---------------- End Footer -------------------*/
 
     </style>
 </head>
@@ -489,26 +504,35 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <h1>ที่อยู่</h1>
-                <h2>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ <br>อำเภอเมือง จังหวัดนครปฐม 73000</h2>
+                <h3>ที่อยู่</h3>
+                <h2>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ <br>อำเภอเมือง จังหวัดนครปฐม 73000
+                </h2>
             </div>
 
             <div class="col-sm-3">
-                <h1>เบอร์โทร</h1>
+                <h3>เบอร์โทร</h3>
                 <h2>เบอร์โทรศัพท์กลาง : (+66-34) 245300 <br>โทรสาร : (+66-34) 245333</h2>
             </div>
 
             <div class="col-sm-3">
-                <h1>ช่องทางติดต่อ</h1>
+                <h3>ช่องทางติดต่อ</h3>
                 <h2>E-mail : science@su.sc.th</h2>
+                <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
+                <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
+
+
             </div>
 
             <div class="col-sm-3">
-                <a>55555555</a>
+                <h3>ช่องทางชำระเงิน</h3>
+                <img src="image/icon/krung.jpg" height="50px" width="Auto">
+                <img src="image/icon/KTB.jpg" height="50px" width="Auto">
+                <h3>บริการจัดส่ง</h3>
+                <img src="image/icon/pn.jpg" height="50px" width="Auto">
             </div>
         </div>
     </div>
-
+    <h4>Online Store Copyright by SCSU</h4>
 </footer>
 <!-------------------------------- End Footer ----------------------------->
 
