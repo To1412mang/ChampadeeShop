@@ -134,7 +134,7 @@
 
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border-radius: 0;
             font-size: 14pt;
 
@@ -159,82 +159,6 @@
             height: auto;
         }
 
-        /* --------------start image slide--------------------------------------------*/
-
-        /* Position the image container (needed to position the left and right arrows) */
-        .container1 {
-            position: relative;
-            width: 50%;
-            max-width: 400px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        /* Hide the images by default */
-        .mySlides {
-            display: none;
-        }
-
-        /* Next & previous buttons */
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 40%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-            text-decoration: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-            text-decoration: none;
-            color: white;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #ffcc00;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-
-        /* -----------------------------------stop image slide--------------------------------------------*/
 
         .container-fluid {
             background: #ffcc00;
@@ -326,10 +250,27 @@
 
         /* ---------------- End Footer -------------------*/
 
+        /*---------------------- Start path --------------------------*/
+        .path{
+            padding-left: 20px;
+            font-size: 14pt;
+        }
+
+        .P, .P:hover {
+            text-decoration: none;
+            color: yellowgreen;
+
+        }
+        .P:hover{
+            background: #f2f2f2;
+            padding: 5px;
+            color: black;
+        }
+        /*---------------------- End path --------------------------*/
+
     </style>
 </head>
 <body>
-
 <div class="jumbotron">
     <div class="container2 text-center">
         <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
@@ -374,50 +315,18 @@
 
 <!---------------------------------- End header ----------------------------------------------->
 
-<!--/* -----------------------------------start image slide--------------------------------------------*/-->
+<!---------------------------------- Start Path ----------------------------------------------->
 
-<div class="container1">
+<div class="path">
+    <a href="test-row-column.php" class="P">หน้าแรก > </a>
+    <a href="#" class="P">ประเภท > </a>
+    <a href="#" class="P">Bown And ColourfullChampadeeMug</a>
 
-    <div class="mySlides">
-        <div class="numbertext">1 / 5</div>
-        <img src="image/Bown+ColourfullChampadeeMug.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">2 / 5</div>
-        <img src="image/ChampadeeCALICOBAG.png" style="width:100%">
-    </div>
-
-
-    <div class="mySlides">
-        <div class="numbertext">3 / 5</div>
-        <img src="image/ChampadeeWATERBOTTLES.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">4 / 5</div>
-        <img src="image/ColourfullChampadeeMug.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">5 / 5</div>
-        <img src="image/BownChampadeeMug.png" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
 
 </div>
-<!--/* -----------------------------------End image slide--------------------------------------------*/-->
+
+<!----------------------- End Path ------------------------------->
+
 
 <br>
 <div class="container">
@@ -464,29 +373,6 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
 
     </div>
 </div>
@@ -594,6 +480,27 @@
     //
     <!-- End Account Register -->
 
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    //    ----------- End Top -------------
 
 </script>
 </body>

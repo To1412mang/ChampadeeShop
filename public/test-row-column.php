@@ -355,7 +355,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="testShop.php" class="B">หน้าแรก</a></li>
-                <li><a href="#" class="B">ประเภทสินค้า</a></li>
+                <li><a href="Description-mug.php" class="B" style="background: black">ประเภทสินค้า</a></li>
 
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
