@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en th">
 <head>
-    <title>TestRow</title>
+    <title>TestShop</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <style>
 
         body {
-            font-family: "TH Sarabun New", Arial, Helvetica, sans-serif;
+            font-family: "TH Sarabun New",Arial, Helvetica, sans-serif;
+
 
         }
 
@@ -42,7 +45,7 @@
         /* Set a style for all buttons */
         .cancelbtn, .signupbtn {
             background-color: #4CAF50;
-            color: white;
+            color: white;  
             padding: 14px 20px;
             margin: 8px 0;
             border: none;
@@ -137,7 +140,6 @@
             margin-bottom: 50px;
             border-radius: 0;
             font-size: 14pt;
-
 
         }
 
@@ -240,7 +242,6 @@
             background: #ffcc00;
             font-weight: bold;
             font-size: 24px;
-
         }
 
         .responsive-1 {
@@ -258,6 +259,8 @@
             margin-top: 10px;
         }
 
+
+
         /* คำอธิบายใต้ภาพ */
         div.desc {
             /*padding: 15px;*/
@@ -272,17 +275,11 @@
             text-decoration: none;
             color: #ffcc00;
         }
-
         /* End คำอธิบายใต้ภาพ */
 
-        .navbar-toggle {
+        .navbar-toggle{
             margin-top: 20px;
         }
-
-        h2 {
-            font-size: 16pt;
-        }
-
         /*--------------- Start Top --------------*/
 
         .buttonTop {
@@ -317,14 +314,25 @@
             border-radius: 10px;
         }
 
-        /*h2{*/
-            /*font-size: 18pt;*/
-        /*}*/
         h3{
             font-size: 20pt;
         }
 
         /* ---------------- End Footer -------------------*/
+
+        /*---------------------- Start recomment ------------------------*/
+
+        div.recommended-1:Hover, a.recommended-1:Hover, a.A:Hover{
+            background: #fff2e6;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16pt;
+            /*padding: 5px;*/
+            color: #e67300;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        /*---------------------- End recomment ------------------------*/
 
 
     </style>
@@ -334,15 +342,14 @@
 <div class="jumbotron">
     <div class="container2 text-center">
         <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
-             class="responsive">
-        <!--        <br><br>-->
+        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px" class="responsive">
+<!--        <br><br>-->
         <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
 <!---------------------------------- Start header ----------------------------------------------->
-<nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -355,19 +362,16 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="testShop.php" >หน้าแรก</a></li>
-                <li><a href="Description-mug.php">ประเภทสินค้า</a></li>
-
-                <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
-                <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
-
+                <li class="active"><a href="testShop.php" class="B">Home</a></li>
+                <li><a href="#" class="B">Products</a></li>
+                <li><a href="#" class="B">Deals</a></li>
+                <li><a href="#" class="B">Stores</a></li>
+                <li><a href="#" class="B">Contact</a></li>
             </ul>
-
             <ul class="nav navbar-nav navbar-right">
                 <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
-                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
+                                class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
     </div>
@@ -424,7 +428,7 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -433,7 +437,7 @@
         </div>
 
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -441,7 +445,7 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -449,7 +453,7 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -457,7 +461,7 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -465,7 +469,7 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -473,7 +477,7 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -481,7 +485,7 @@
             </a>
         </div>
 
-        <div class="col-sm-3">
+        <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
@@ -537,6 +541,17 @@
 </footer>
 <!-------------------------------- End Footer ----------------------------->
 
+
+<!-------------------------------- Start Footer ----------------------------->
+<footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+</footer>
+<!-------------------------------- End Footer ----------------------------->
+
 <!-- Start Account Register -->
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close"
@@ -578,6 +593,7 @@
 <button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
 
 <!-------------- End Top ----------------->
+
 
 
 <script>
@@ -652,7 +668,6 @@
     }
 
     //    ----------- End Top -------------
-
 </script>
 </body>
 </html>

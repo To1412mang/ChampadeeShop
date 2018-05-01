@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
-    <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -136,7 +136,7 @@
 
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
-            margin-bottom: 20px;
+            margin-bottom: 50px;
             border-radius: 0;
             font-size: 14pt;
 
@@ -299,26 +299,23 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="testShop.php" class="B">หน้าแรก</a></li>
-                <li><a href="#" class="B">ประเภทสินค้า</a></li>
-
-                <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
-                <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
-
+                <li class="active"><a href="testShop.php" class="B">Home</a></li>
+                <li><a href="#" class="B">Products</a></li>
+                <li><a href="#" class="B">Deals</a></li>
+                <li><a href="#" class="B">Stores</a></li>
+                <li><a href="#" class="B">Contact</a></li>
             </ul>
-
             <ul class="nav navbar-nav navbar-right">
                 <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
-                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
+                                class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
             </ul>
         </div>
     </div>
-
-
-
 </nav>
+
+<!---------------------------------- End header ----------------------------------------------->
+
 
 <!---------------------------------- End header ----------------------------------------------->
 
