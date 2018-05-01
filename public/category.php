@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>กระเป๋าจำปาดี</title>
+    <title>ประเภทสินค้า</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -318,6 +318,27 @@
         }
         /*--------------------- End DropDown ------------------------*/
 
+        .H1{
+            border-bottom: 6px solid #00802b;
+            border-radius: 3px;
+            /*background-color: lightgrey;*/
+      }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0,0,0,0.2);
+            margin-top: 120px;
+        }
+
+        a.dot1,a.dot1:Hover{
+            text-decoration: none;
+        }
+
     </style>
 </head>
 <body>
@@ -348,7 +369,7 @@
                 <li class="active"><a href="index.php" class="B">หน้าแรก</a></li>
                 <li>
                     <div class="dropdown down">
-                        <a data-toggle="dropdown" class="down-1" >ประเภทสินค้า <span class="caret"></span></a>
+                        <a data-toggle="dropdown" class="down-1">ประเภทสินค้า <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="category.php" class="down-2">ทั้งหมด</a></li>
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
@@ -378,9 +399,7 @@
 
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
-    <a href="category.php" class="P">ประเภท > </a>
-    <a  class="P">กระเป๋า</a>
-
+    <a class="P">ประเภท </a>
 
 </div>
 
@@ -389,45 +408,8 @@
 
 <br>
 <div class="container">
-    <div class="row">
 
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-
-    </div>
-<br><br><br><br><br><br>
-    <h1>สินค้าแนะนำ</h1>
+    <h1 class="H1">แก้ว</h1>
 
     <div class="row recommended">
 
@@ -456,17 +438,109 @@
             </a>
         </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="mug.php" class="dot1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </a>
         </div>
 
 
     </div>
 </div>
+<br><br><br>
+
+<div class="container">
+
+    <h1 class="H1">กระเป๋า</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="bag.php" class="dot1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+<br><br><br>
+
+<div class="container">
+
+    <h1 class="H1">กระบอกน้ำ</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="waterBottle.php" class="dot1">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
 <br>
 
 <br><br>

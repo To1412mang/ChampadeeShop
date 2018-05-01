@@ -136,7 +136,7 @@
 
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border-radius: 0;
             font-size: 14pt;
 
@@ -271,6 +271,27 @@
         }
         /*---------------------- End path --------------------------*/
 
+        /*--------------------- Start DropDown ------------------------*/
+        .down{
+            padding: 8px;
+            margin-left: 6px;
+
+        }
+        .down-1,.down-1:Hover{
+            text-decoration: none;
+            /*border: 5px solid #f2f2f2;*/
+            color: #a6a6a6;
+        }
+        .down-1{
+            color: #a6a6a6;
+            text-decoration: none;
+        }
+        .down-2{
+            font-size: 16pt;
+
+        }
+        /*--------------------- End DropDown ------------------------*/
+
     </style>
 </head>
 <body>
@@ -300,7 +321,15 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="testShop.php" class="B">Home</a></li>
-                <li><a href="#" class="B">Products</a></li>
+                <li>
+                    <div class="dropdown down">
+                        <a data-toggle="dropdown" class="down-1">ประเภทสินค้า <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="mug.php" class="down-2">แก้ว</a></li>
+                            <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#" class="B">Deals</a></li>
                 <li><a href="#" class="B">Stores</a></li>
                 <li><a href="#" class="B">Contact</a></li>
@@ -527,6 +556,17 @@
 
     //    ----------- End Top -------------
 
+    //    --------------- Start Drop Down
+
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+
+    //    --------------- End Drop Down
 
 </script>
 </body>

@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -138,7 +138,6 @@
             border-radius: 0;
             font-size: 14pt;
 
-
         }
 
         /* Remove the jumbotron's default bottom margin */
@@ -158,7 +157,6 @@
             max-width: 300px;
             height: auto;
         }
-
 
         .container-fluid {
             background: #ffcc00;
@@ -210,7 +208,7 @@
         /*--------------- Start Top --------------*/
 
         .buttonTop {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         #myBtn {
@@ -237,21 +235,21 @@
 
         /* ---------------- Start Footer -------------------*/
 
-        img.sc{
+        img.sc {
             border-radius: 10px;
         }
 
         /*h2{*/
         /*font-size: 18pt;*/
         /*}*/
-        h3{
+        h3 {
             font-size: 20pt;
         }
 
         /* ---------------- End Footer -------------------*/
 
         /*---------------------- Start path --------------------------*/
-        .path{
+        .path {
             padding-left: 20px;
             font-size: 16pt;
         }
@@ -261,16 +259,18 @@
             color: green;
 
         }
-        .P:hover{
+
+        .P:hover {
             background: #f2f2f2;
             padding: 5px;
             color: black;
         }
+
         /*---------------------- End path --------------------------*/
 
         /*---------------------- Start recomment ------------------------*/
 
-        .recommended{
+        .recommended {
             /*background: #f2f2f2;*/
             border: 5px solid #fff7e6;
             border-radius: 5px;
@@ -278,16 +278,17 @@
 
         }
 
-        div.recommended-1:Hover, a.recommended-1:Hover{
+        div.recommended-1:Hover, a.recommended-1:Hover {
             background: #fff2e6;
             border-radius: 10px;
             text-decoration: none;
             font-size: 16pt;
             /*padding: 5px;*/
             color: #e67300;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
-        .recommended-1,a.recommended-1{
+
+        .recommended-1, a.recommended-1 {
             text-align: center;
             margin-bottom: 10px;
             color: #ffcc00;
@@ -296,6 +297,31 @@
         }
 
         /*---------------------- End recomment ------------------------*/
+
+        /*--------------------- Start DropDown ------------------------*/
+        .down {
+            padding: 8px;
+            margin-left: 6px;
+
+        }
+
+        .down-1, .down-1:Hover {
+            text-decoration: none;
+            /*border: 5px solid #f2f2f2;*/
+            color: #a6a6a6;
+        }
+
+        .down-1 {
+            color: #a6a6a6;
+            text-decoration: none;
+        }
+
+        .down-2 {
+            font-size: 16pt;
+
+        }
+
+        /*--------------------- End DropDown ------------------------*/
 
 
     </style>
@@ -312,7 +338,7 @@
 </div>
 
 <!---------------------------------- Start header ----------------------------------------------->
-<nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -320,13 +346,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="testShop.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
             <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="testShop.php" class="B">หน้าแรก</a></li>
-                <li><a href="#" class="B">ประเภทสินค้า</a></li>
+                <li class="active"><a href="index.php" class="B">หน้าแรก</a></li>
+                <li>
+                    <div class="dropdown down">
+                        <a data-toggle="dropdown" class="down-1">ประเภทสินค้า <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="category.php" class="down-2">ทั้งหมด</a></li>
+                            <li><a href="mug.php" class="down-2">แก้ว</a></li>
+                            <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
+                            <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
+                        </ul>
+                    </div>
+                </li>
 
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
@@ -348,9 +384,9 @@
 <!---------------------------------- Start Path ----------------------------------------------->
 
 <div class="path">
-    <a href="test-row-column.php" class="P">หน้าแรก > </a>
-    <a href="#" class="P">ประเภท > </a>
-    <a href="#" class="P">แก้ว</a>
+    <a href="index.php" class="P">หน้าแรก > </a>
+    <a href="category.php" class="P">ประเภท > </a>
+    <a class="P">แก้ว</a>
 
 
 </div>
@@ -397,7 +433,8 @@
 
 
     </div>
-
+    <br><br><br>
+    <br><br><br>
     <h1>สินค้าแนะนำ</h1>
 
     <div class="row recommended">
@@ -406,7 +443,7 @@
             <a href="test.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>Add a description of the image here</div>
             </a>
         </div>
 
@@ -415,7 +452,7 @@
             <a href="test.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>Add a description of the image here</div>
             </a>
         </div>
 
@@ -423,7 +460,7 @@
             <a href="test.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>Add a description of the image here</div>
             </a>
         </div>
 
@@ -431,7 +468,7 @@
             <a href="test.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>Add a description of the image here</div>
             </a>
         </div>
 
@@ -465,8 +502,10 @@
             <div class="col-sm-3">
                 <h3>ช่องทางติดต่อ</h3>
                 <h2>E-mail : science@su.sc.th</h2>
-                <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
-                <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
+                <a href="http://www.sc.su.ac.th/index.php"><img class="sc" src="image/icon/susc.jpg" height="50px"
+                                                                width="Auto"></a>
+                <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
+                                                                                   height="50px" width="Auto"></a>
 
 
             </div>
@@ -522,7 +561,8 @@
 
 <!-------------- Start Top ----------------->
 
-<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
+<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+</button>
 
 <!-------------- End Top ----------------->
 
@@ -563,6 +603,18 @@
     }
 
     //    ----------- End Top -------------
+
+    //    --------------- Start Drop Down
+
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+
+    //    --------------- End Drop Down
 
 </script>
 </body>

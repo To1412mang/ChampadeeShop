@@ -138,7 +138,6 @@
             border-radius: 0;
             font-size: 14pt;
 
-
         }
 
         /* Remove the jumbotron's default bottom margin */
@@ -268,7 +267,7 @@
 
         }
 
-        .A{
+        .A {
             text-decoration: none;
             color: #ffcc00;
         }
@@ -286,7 +285,7 @@
         /*--------------- Start Top --------------*/
 
         .buttonTop {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         #myBtn {
@@ -313,11 +312,11 @@
 
         /* ---------------- Start Footer -------------------*/
 
-        img.sc{
+        img.sc {
             border-radius: 10px;
         }
 
-        h3{
+        h3 {
             font-size: 20pt;
         }
 
@@ -325,18 +324,38 @@
 
         /*---------------------- Start recomment ------------------------*/
 
-        div.recommended-1:Hover, a.recommended-1:Hover, a.A:Hover{
+        div.recommended-1:Hover, a.recommended-1:Hover, a.A:Hover {
             background: #fff2e6;
             border-radius: 10px;
             text-decoration: none;
             font-size: 16pt;
             /*padding: 5px;*/
             color: #e67300;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
 
         /*---------------------- End recomment ------------------------*/
 
+        /*--------------------- Start DropDown ------------------------*/
+        .down{
+            padding: 8px;
+            margin-left: 6px;
+
+        }
+        .down-1,.down-1:Hover{
+            text-decoration: none;
+            /*border: 5px solid #f2f2f2;*/
+            color: #a6a6a6;
+        }
+        .down-1{
+            color: #a6a6a6;
+            text-decoration: none;
+        }
+        .down-2{
+            font-size: 16pt;
+
+        }
+        /*--------------------- End DropDown ------------------------*/
 
     </style>
 </head>
@@ -353,7 +372,7 @@
 </div>
 
 <!---------------------------------- Start header ----------------------------------------------->
-<nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -361,13 +380,23 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="testShop.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
             <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="testShop.php" >หน้าแรก</a></li>
-                <li><a href="Description-mug.php">ประเภทสินค้า</a></li>
+                <li class="active"><a href="index.php">หน้าแรก</a></li>
+                <li>
+                    <div class="dropdown down">
+                        <a data-toggle="dropdown" class="down-1">ประเภทสินค้า <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="category.php" class="down-2">ทั้งหมด</a></li>
+                            <li><a href="mug.php" class="down-2">แก้ว</a></li>
+                            <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
+                            <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
+                        </ul>
+                    </div>
+                </li>
 
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
@@ -432,6 +461,7 @@
 <!--/* -----------------------------------End image slide--------------------------------------------*/-->
 
 <br>
+<!--<h1 style="padding-left: 20px">สินค้าแนะนำ</h1>-->
 <div class="container">
     <div class="row">
 
@@ -529,8 +559,10 @@
             <div class="col-sm-3">
                 <h3>ช่องทางติดต่อ</h3>
                 <h2>E-mail : science@su.sc.th</h2>
-                <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
-                <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
+                <a href="http://www.sc.su.ac.th/index.php"><img class="sc" src="image/icon/susc.jpg" height="50px"
+                                                                width="Auto"></a>
+                <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
+                                                                                   height="50px" width="Auto"></a>
 
 
             </div>
@@ -586,7 +618,8 @@
 
 <!-------------- Start Top ----------------->
 
-<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
+<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+</button>
 
 <!-------------- End Top ----------------->
 
@@ -663,6 +696,18 @@
     }
 
     //    ----------- End Top -------------
+
+    //    --------------- Start Drop Down
+
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+
+    //    --------------- End Drop Down
 
 </script>
 </body>

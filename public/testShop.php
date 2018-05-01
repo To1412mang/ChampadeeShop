@@ -308,7 +308,14 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="testShop.php" class="B">Home</a></li>
-                <li><a href="#" class="B">Products</a></li>
+                <li><div class="dropdown">
+                    <a data-toggle="dropdown" class="B">Products <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="#">HTML</a></li>
+                            <li><a tabindex="-1" href="#">CSS</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="#" class="B">Deals</a></li>
                 <li><a href="#" class="B">Stores</a></li>
                 <li><a href="#" class="B">Contact</a></li>
