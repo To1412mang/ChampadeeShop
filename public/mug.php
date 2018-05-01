@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TestRow</title>
+    <title>แก้วจำปาดี</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -253,12 +253,12 @@
         /*---------------------- Start path --------------------------*/
         .path{
             padding-left: 20px;
-            font-size: 14pt;
+            font-size: 16pt;
         }
 
         .P, .P:hover {
             text-decoration: none;
-            color: yellowgreen;
+            color: green;
 
         }
         .P:hover{
@@ -267,6 +267,36 @@
             color: black;
         }
         /*---------------------- End path --------------------------*/
+
+        /*---------------------- Start recomment ------------------------*/
+
+        .recommended{
+            /*background: #f2f2f2;*/
+            border: 5px solid #fff7e6;
+            border-radius: 5px;
+            margin-top: 5px;
+
+        }
+
+        div.recommended-1:Hover, a.recommended-1:Hover{
+            background: #fff2e6;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16pt;
+            /*padding: 5px;*/
+            color: #e67300;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        .recommended-1,a.recommended-1{
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16pt;
+        }
+
+        /*---------------------- End recomment ------------------------*/
+
 
     </style>
 </head>
@@ -320,7 +350,7 @@
 <div class="path">
     <a href="test-row-column.php" class="P">หน้าแรก > </a>
     <a href="#" class="P">ประเภท > </a>
-    <a href="#" class="P">Bown And ColourfullChampadeeMug</a>
+    <a href="#" class="P">แก้ว</a>
 
 
 </div>
@@ -332,8 +362,8 @@
 <div class="container">
     <div class="row">
 
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -341,35 +371,67 @@
         </div>
 
 
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
         </div>
 
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3">
-            <a href="test.php" class="A">
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+
+    </div>
+
+    <h1>สินค้าแนะนำ</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div >Add a description of the image here</div>
             </a>
         </div>
 
