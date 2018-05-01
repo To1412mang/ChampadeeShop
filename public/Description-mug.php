@@ -256,6 +256,7 @@
         .path{
             padding-left: 20px;
             font-size: 14pt;
+            text-decoration: none;
         }
 
         .P, .P:hover {
