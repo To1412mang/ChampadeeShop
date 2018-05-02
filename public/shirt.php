@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>TestDescription</title>
+    <title>กระบอกน้ำ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <style>
 
@@ -204,7 +202,7 @@
         }
 
         h2 {
-            font-size: 14pt;
+            font-size: 16pt;
         }
 
         /*--------------- Start Top --------------*/
@@ -241,10 +239,9 @@
             border-radius: 10px;
         }
 
-        h2 {
-            font-size: 16pt;
-        }
-
+        /*h2{*/
+        /*font-size: 18pt;*/
+        /*}*/
         h3 {
             font-size: 20pt;
         }
@@ -271,6 +268,36 @@
 
         /*---------------------- End path --------------------------*/
 
+        /*---------------------- Start recomment ------------------------*/
+
+        .recommended {
+            /*background: #f2f2f2;*/
+            border: 5px solid #fff7e6;
+            border-radius: 5px;
+            margin-top: 5px;
+
+        }
+
+        div.recommended-1:Hover, a.recommended-1:Hover {
+            background: #fff2e6;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16pt;
+            /*padding: 5px;*/
+            color: #e67300;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .recommended-1, a.recommended-1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16pt;
+        }
+
+        /*---------------------- End recomment ------------------------*/
+
         /*--------------------- Start DropDown ------------------------*/
         .down {
             padding: 8px;
@@ -296,45 +323,10 @@
 
         /*--------------------- End DropDown ------------------------*/
 
-        .description {
-            /*background-color: black;*/
-            /*border: 1px solid red;*/
-            /*font-size: 16pt;*/
-            text-align: center;
-
-        }
-
-        .description1 {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #ffcc00;
-            color: white;
-            padding: 14px 28px;
-            font-size: 20pt;
-            cursor: pointer;
-            text-align: center;
-            border-radius: 9px;
-        }
-
-        .description1:hover{
-            background-color: #ffeecc;
-            color: #ff8c1a;
-            border-radius: 9px;
-        }
-        b.description{
-            color: red;
-            padding: 20px;
-            /*font-size: 60pt;*/
-        }
-        h3.description{
-            font-size: 4vw;
-        }
 
     </style>
 </head>
 <body>
-
 <div class="jumbotron">
     <div class="container2 text-center">
         <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
@@ -368,11 +360,11 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
-                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-                            <li><a href="notebook.php" class="down-2">สมุด</a></li>
+
                         </ul>
                     </div>
                 </li>
+
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
                 <!--                <li><a href="#" class="B">Contact</a></li>-->
@@ -390,101 +382,101 @@
 
 <!---------------------------------- End header ----------------------------------------------->
 
-<!---------------------------------- End header ----------------------------------------------->
-
 <!---------------------------------- Start Path ----------------------------------------------->
 
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a href="mug.php" class="P">แก้ว > </a>
-    <a class="P">Bown And ColourfullChampadeeMug</a>
+    <a class="P">กระบอกน้ำ</a>
+
+
 </div>
 
 <!----------------------- End Path ------------------------------->
 
-<!----------------------- Start Description ------------------------------->
 
+<br>
 <div class="container">
     <div class="row">
 
-        <div class="col-sm-4">
-            <a href="test.php" class="A">
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <!--                <div class="desc">Add a description of the image here</div>-->
+                <div class="desc">Add a description of the image here</div>
             </a>
         </div>
 
-        <div class="col-sm-4">
-            <a href="test.php" class="A">
-                <div class="panel-body">
-                    <h1>รายละเอียดสินค้า</h1>
-                    <p style="font-size: 18pt">แก้วมัคจำปาดีทำจากเซรามิค
-                        ..............................................................................</p>
-                </div>
-                <!--                <div class="desc">Add a description of the image here</div>-->
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
             </a>
         </div>
 
-        <div class="col-sm-4 description">
-
-            <div class="panel-body">
-                <h3 class="description">ราคา <b style="font-size: 7vw" class="description">250</b> บาท</h3><br>
-                <button class="description1"> <b>สั่งซื้อ</b></button>
-                <br>
-                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b style="padding-left: 10px">ใส่ตระกร้า</b>
-                </button>
-            </div>
-
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
         </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">Add a description of the image here</div>
+            </a>
+        </div>
+
+
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <h1>สินค้าแนะนำ</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="test.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
 
     </div>
 </div>
-
-<!----------------------- End Description ------------------------------->
-
-<!----------------------- Start Review ------------------------------->
-
-<div class="container">
-    <div class="row">
-
-        <div class="col-sm-4">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <!--                <div class="desc">Add a description of the image here</div>-->
-            </a>
-        </div>
-
-        <div class="col-sm-4">
-            <a href="test.php" class="A">
-                <div class="panel-body">
-                    <h1>รายละเอียดสินค้า</h1>
-                    <p style="font-size: 18pt">แก้วมัคจำปาดีทำจากเซรามิค
-                        ..............................................................................</p>
-                </div>
-                <!--                <div class="desc">Add a description of the image here</div>-->
-            </a>
-        </div>
-
-        <div class="col-sm-4 description">
-
-            <div class="panel-body">
-                <h3 >ราคา <b style="font-size: 30pt" class="description">250</b> บาท</h3><br>
-                <button class="description1"> <b>สั่งซื้อ</b></button>
-                <br>
-                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b style="padding-left: 10px">ใส่ตระกร้า</b>
-                </button>
-            </div>
-            <!--                <div class="desc">Add a description of the image here</div>-->
-
-        </div>
-
-    </div>
-</div>
-
-<!----------------------- End Review ------------------------------->
+<br>
 
 <br><br>
 
@@ -521,10 +513,10 @@
 
             <div class="col-sm-3">
                 <h3>ช่องทางชำระเงิน</h3>
-                <a href="#"><img src="image/icon/krung.jpg" height="50px" width="Auto"></a>
-                <a href="#"><img src="image/icon/KTB.jpg" height="50px" width="Auto"></a>
+                <img src="image/icon/krung.jpg" height="50px" width="Auto">
+                <img src="image/icon/KTB.jpg" height="50px" width="Auto">
                 <h3>บริการจัดส่ง</h3>
-                <a href="#"><img src="image/icon/pn.jpg" height="50px" width="Auto"></a>
+                <img src="image/icon/pn.jpg" height="50px" width="Auto">
             </div>
         </div>
     </div>
@@ -536,7 +528,7 @@
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close"
           title="Close Modal">&times;</span>
-    <form class="modal-content" action="/action_page.php"> <!-- แก้ตรงนี้ด้วย -->
+    <form class="modal-content" action="/action_page.php">
         <div class="container">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
@@ -575,6 +567,7 @@
 
 <!-------------- End Top ----------------->
 
+
 <script>
     //
     <!-- Start Account Register -->
@@ -586,11 +579,10 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
-    };
+    }
     //
     <!-- End Account Register -->
 
-    //    ----------- Start Top -------------
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
