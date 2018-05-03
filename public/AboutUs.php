@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-    <title>ChampaDee CALICO BAG</title>
+    <title>เกี่ยวกับเรา</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <style>
 
@@ -71,8 +69,7 @@
 
         /* Add padding to container elements */
         .container2 {
-            /*padding: 5px;*/
-
+            padding: 5px;
         }
 
         /* The Modal (background) */
@@ -110,6 +107,7 @@
             top: 15px;
             font-size: 40px;
             font-weight: bold;
+            /*color: #f1f1f1;*/
         }
 
         .close:hover,
@@ -173,6 +171,8 @@
             height: auto;
             margin-right: 10px;
             display: block;
+            /*margin-left: 10px;*/
+            /*margin-right: auto;*/
             position: relative;
         }
 
@@ -180,10 +180,19 @@
             margin-top: 10px;
         }
 
-        h1.A {
-            color: #ff9900;
-            font-size: 2.5vw;
+        /* คำอธิบายใต้ภาพ */
+        div.desc {
+            /*padding: 15px;*/
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: none;
+            font-size: 16pt;
 
+        }
+
+        .A, .A:hover {
+            text-decoration: none;
+            color: #ffcc00;
         }
 
         /* End คำอธิบายใต้ภาพ */
@@ -193,7 +202,7 @@
         }
 
         h2 {
-            font-size: 14pt;
+            font-size: 16pt;
         }
 
         /*--------------- Start Top --------------*/
@@ -230,10 +239,9 @@
             border-radius: 10px;
         }
 
-        h2 {
-            font-size: 16pt;
-        }
-
+        /*h2{*/
+        /*font-size: 18pt;*/
+        /*}*/
         h3 {
             font-size: 20pt;
         }
@@ -260,6 +268,36 @@
 
         /*---------------------- End path --------------------------*/
 
+        /*---------------------- Start recomment ------------------------*/
+
+        .recommended {
+            /*background: #f2f2f2;*/
+            border: 5px solid #fff7e6;
+            border-radius: 5px;
+            margin-top: 5px;
+
+        }
+
+        div.recommended-1:Hover, a.recommended-1:Hover {
+            background: #fff2e6;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16pt;
+            /*padding: 5px;*/
+            color: #e67300;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .recommended-1, a.recommended-1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16pt;
+        }
+
+        /*---------------------- End recomment ------------------------*/
+
         /*--------------------- Start DropDown ------------------------*/
         .down {
             padding: 8px;
@@ -269,6 +307,7 @@
 
         .down-1, .down-1:Hover {
             text-decoration: none;
+            /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
 
@@ -284,71 +323,10 @@
 
         /*--------------------- End DropDown ------------------------*/
 
-        .description {
-            text-align: center;
-
-        }
-
-        .description1 {
-            display: block;
-            width: 100%;
-            border: none;
-            background-color: #ffcc00;
-            color: white;
-            padding: 14px 28px;
-            font-size: 20pt;
-            cursor: pointer;
-            text-align: center;
-            border-radius: 9px;
-        }
-
-        .description1:hover {
-            background-color: #ffeecc;
-            color: #ff8c1a;
-            border-radius: 9px;
-        }
-
-        b.description {
-            color: red;
-            padding: 10px;
-            text-shadow: 2px 2px 4px #b3b3b3;
-        }
-
-        h3.description {
-            font-size: 3vw;
-        }
-
-        /*---------------------- Start recomment ------------------------*/
-
-        .recommended {
-            border: 5px solid #fff7e6;
-            border-radius: 5px;
-            margin-top: 5px;
-
-        }
-
-        div.recommended-1:Hover, a.recommended-1:Hover {
-            background: #fff2e6;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 16pt;
-            color: #e67300;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .recommended-1, a.recommended-1 {
-            text-align: center;
-            margin-bottom: 10px;
-            color: #ffcc00;
-            text-decoration: none;
-            font-size: 16pt;
-        }
-
-        /*---------------------- End recomment ------------------------*/
-
         .H1 {
-            border-bottom: 6px solid #99cc00;
+            border-bottom: 6px solid #00802b;
             border-radius: 3px;
+            /*background-color: lightgrey;*/
         }
 
         .dot {
@@ -371,20 +349,20 @@
             font-size: 16pt;
             color: #e67300;
         }
-
-        h5:hover {
+        h5:hover{
             color: black;
         }
-
 
     </style>
 </head>
 <body>
-
 <div class="jumbotron">
     <div class="container2 text-center">
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="200px" height="Auto"
+        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
+        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
              class="responsive">
+        <!--        <br><br>-->
+        <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
@@ -412,12 +390,14 @@
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
                             <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-                            <li><a href="notebook.php" class="down-2">สมุด</a></li>
+
+
                         </ul>
                     </div>
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
+                <!--                <li><a href="#" class="B">Contact</a></li>-->
 
             </ul>
 
@@ -430,88 +410,29 @@
     </div>
 </nav>
 
-
 <!---------------------------------- End header ----------------------------------------------->
 
 <!---------------------------------- Start Path ----------------------------------------------->
 
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
-    <a href="category.php" class="P">ประเภท > </a>
-    <a href="mug.php" class="P">แก้ว > </a>
-    <a class="P">ChampaDee CALICO BAG</a>
+    <a class="P">เกี่ยวกับเรา </a>
+
 </div>
 
 <!----------------------- End Path ------------------------------->
-<br><br>
-<!----------------------- Start Description ------------------------------->
-
-<div class="container">
-    <div class="row">
-
-        <div class="col-sm-4" style="text-align: center">
-            <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                         style="width:100%" alt="Image"></div>
-            <!------------------ Start Like Share Facebook --------------------->
-
-            <script>(function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
-                 data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
-                 data-share="true"></div>
-
-            <!------------------ End Like Share Facebook --------------------->
 
 
-        </div>
-
-        <div class="col-sm-5">
-            <div class="panel-body">
-                <h1 class="A" style="border-bottom: 2px solid #ffcc00">รายละเอียดสินค้า</h1>
-                <p style="font-size: 2vw">กระเป๋าผ้าลายเส้นน้องจำปาดีคุณภาพดี ทนทานไม่ขาดง่าย
-                    ลายกระเป๋าผ้าน้องจำปาดีเป็นผลงานการออกแบบลวดลายของคณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร
-                    มีอัตลักษณ์ของคณะวิทยาศาสตร์และมหาวิทยาลัยศิลปากรปรากฎในลายกระเป๋าด้วยเผื่อบ่งบอกถึงความเป็นศิลปากรที่ว่า
-                    Scientific Thinking Creativity and Morality Social Responsibility Unity (SCSU)</p>
-            </div>
-        </div>
-
-        <div class="col-sm-3 description">
-
-            <div class="panel-body">
-                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">160</b> บาท</h3><br>
-                <button class="description1"><b>สั่งซื้อ</b></button>
-                <br>
-                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b
-                            style="padding-left: 10px">ใส่ตระกร้า</b>
-                </button>
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<!----------------------- End Description ------------------------------->
-
-
-<!----------------------- Start recomment -------------------------->
-
-<br><br><br>
+<br>
 <div class="container">
 
-    <h1 class="H1">สินค้าแนะนำ</h1>
+    <h1 class="H1">แก้ว</h1>
 
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
             </a>
@@ -519,7 +440,52 @@
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+        <a href="mug.php" class="dot1 ">
+            <div class="col-sm-3 dot1 " style="text-align:center">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+
+            </div>
+        </a>
+
+    </div>
+</div>
+<br><br><br>
+
+<div class="container">
+
+    <h1 class="H1">กระเป๋า</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-bag.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
@@ -527,15 +493,15 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href=Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
             </a>
         </div>
 
         <div class="col-sm-3 dot1" style="text-align:center">
-            <a href="category.php" class="dot1">
+            <a href="bag.php" class="dot1">
                 <h5><b>เพิ่มเติม</b></h5>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -548,27 +514,55 @@
     </div>
 </div>
 <br><br><br>
-<!----------------------- End recomment -------------------------->
-
-<!----------------------- Start Review Facebook ------------------------------->
 
 <div class="container">
 
-    <div id="fb-root"></div>
-    <script>(function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
-         data-width="100%" data-numposts="5"></div>
+    <h1 class="H1">กระบอกน้ำ</h1>
 
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="waterBottle.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </a>
+        </div>
+
+
+    </div>
 </div>
 
-<!----------------------- End Review Facebook ------------------------------->
+<br>
+
+<br><br>
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
@@ -593,21 +587,17 @@
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
                                                                                    height="50px" width="Auto"></a>
 
-                <div id="fb-root"></div>
-
             </div>
 
             <div class="col-sm-3">
                 <h3>ช่องทางชำระเงิน</h3>
-                <a><img src="image/icon/krung.jpg" height="50px" width="Auto"></a>
-                <a><img src="image/icon/KTB.jpg" height="50px" width="Auto"></a>
+                <img src="image/icon/krung.jpg" height="50px" width="Auto">
+                <img src="image/icon/KTB.jpg" height="50px" width="Auto">
                 <h3>บริการจัดส่ง</h3>
-                <a><img src="image/icon/pn.jpg" height="50px" width="Auto"></a>
+                <img src="image/icon/pn.jpg" height="50px" width="Auto">
             </div>
         </div>
     </div>
-
-
     <h4>Online Store Copyright by SCSU</h4>
 </footer>
 <!-------------------------------- End Footer ----------------------------->
@@ -616,7 +606,7 @@
 <div id="id01" class="modal">
     <span onclick="document.getElementById('id01').style.display='none'" class="close"
           title="Close Modal">&times;</span>
-    <form class="modal-content" action="/action_page.php"> <!-- แก้ตรงนี้ด้วย -->
+    <form class="modal-content" action="/action_page.php">
         <div class="container">
             <h1>Sign Up</h1>
             <p>Please fill in this form to create an account.</p>
@@ -655,6 +645,7 @@
 
 <!-------------- End Top ----------------->
 
+
 <script>
     //
     <!-- Start Account Register -->
@@ -666,11 +657,10 @@
         if (event.target == modal) {
             modal.style.display = "none";
         }
-    };
+    }
     //
     <!-- End Account Register -->
 
-    //    ----------- Start Top -------------
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {

@@ -456,7 +456,7 @@
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
+            <a href="Description-bag.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
@@ -472,7 +472,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
+            <a href="Description-bag.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>

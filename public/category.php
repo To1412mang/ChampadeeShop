@@ -476,8 +476,8 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
             </a>
@@ -485,16 +485,16 @@
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href=Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
             </a>
