@@ -300,8 +300,8 @@
             background-color: #ff6600;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #myBtn:hover {
@@ -563,6 +563,7 @@
                                                                 width="Auto"></a>
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
                                                                                    height="50px" width="Auto"></a>
+
 
 
             </div>

@@ -171,8 +171,6 @@
             height: auto;
             margin-right: 10px;
             display: block;
-            /*margin-left: 10px;*/
-            /*margin-right: auto;*/
             position: relative;
         }
 
@@ -223,8 +221,8 @@
             background-color: #ff6600;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #myBtn:hover {
@@ -239,9 +237,6 @@
             border-radius: 10px;
         }
 
-        /*h2{*/
-        /*font-size: 18pt;*/
-        /*}*/
         h3 {
             font-size: 20pt;
         }
@@ -322,6 +317,10 @@
         }
 
         /*--------------------- End DropDown ------------------------*/
+        .H1 {
+            border-bottom: 6px solid #99cc00;
+            border-radius: 3px;
+        }
 
 
     </style>
@@ -329,11 +328,8 @@
 <body>
 <div class="jumbotron">
     <div class="container2 text-center">
-        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
         <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
              class="responsive">
-        <!--        <br><br>-->
-        <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
@@ -360,13 +356,13 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
+                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
                         </ul>
                     </div>
                 </li>
 
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
 
             </ul>
 
@@ -394,13 +390,13 @@
 <!----------------------- End Path ------------------------------->
 
 
-<br>
+<br><br>
 <div class="container">
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -409,7 +405,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -417,7 +413,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -425,7 +421,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -435,7 +431,7 @@
     </div>
     <br><br><br>
     <br><br><br>
-    <h1>สินค้าแนะนำ</h1>
+    <h1 class="H1">สินค้าแนะนำ</h1>
 
     <div class="row recommended">
 
@@ -481,11 +477,6 @@
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
-    <!--    <p>Online Store Copyright</p>-->
-    <!--    <form class="form-inline">Get deals:-->
-    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
-    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
-    <!--    </form>-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -506,7 +497,6 @@
                                                                 width="Auto"></a>
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
                                                                                    height="50px" width="Auto"></a>
-
 
             </div>
 

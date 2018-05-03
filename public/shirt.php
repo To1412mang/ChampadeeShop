@@ -223,8 +223,8 @@
             background-color: #ff6600;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #myBtn:hover {
@@ -322,6 +322,11 @@
         }
 
         /*--------------------- End DropDown ------------------------*/
+        .H1 {
+            border-bottom: 6px solid #99cc00;
+            border-radius: 3px;
+            /*background-color: lightgrey;*/
+        }
 
 
     </style>
@@ -360,6 +365,7 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
+                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
 
                         </ul>
                     </div>
@@ -387,7 +393,7 @@
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a class="P">กระบอกน้ำ</a>
+    <a class="P">เสื้อ</a>
 
 
 </div>
@@ -436,7 +442,7 @@
     </div>
     <br><br><br>
     <br><br><br>
-    <h1>สินค้าแนะนำ</h1>
+    <h1 class="H1">สินค้าแนะนำ</h1>
 
     <div class="row recommended">
 

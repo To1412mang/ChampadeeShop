@@ -225,8 +225,8 @@
             background-color: #ff6600;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #myBtn:hover {
@@ -318,6 +318,12 @@
         }
         /*--------------------- End DropDown ------------------------*/
 
+        .H1 {
+            border-bottom: 6px solid #99cc00;
+            border-radius: 3px;
+            /*background-color: lightgrey;*/
+        }
+
     </style>
 </head>
 <body>
@@ -392,7 +398,7 @@
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
+            <a href="Description-bag.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -401,7 +407,7 @@
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
+            <a href="Description-bag.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -409,7 +415,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
+            <a href="Description-bag.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -417,7 +423,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="A recommended-1">
+            <a href="Description-bag.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -427,7 +433,7 @@
 
     </div>
 <br><br><br><br><br><br>
-    <h1>สินค้าแนะนำ</h1>
+    <h1 class="H1">สินค้าแนะนำ</h1>
 
     <div class="row recommended">
 
@@ -496,7 +502,6 @@
                 <h2>E-mail : science@su.sc.th</h2>
                 <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
-
 
             </div>
 

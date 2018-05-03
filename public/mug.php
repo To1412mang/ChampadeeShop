@@ -223,8 +223,8 @@
             background-color: #ff6600;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #myBtn:hover {
@@ -323,6 +323,12 @@
 
         /*--------------------- End DropDown ------------------------*/
 
+        .H1 {
+            border-bottom: 6px solid #99cc00;
+            border-radius: 3px;
+            /*background-color: lightgrey;*/
+        }
+
 
     </style>
 </head>
@@ -400,7 +406,7 @@
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
+            <a href="Description-mug.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -409,7 +415,7 @@
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
+            <a href="Description-mug.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -417,7 +423,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
+            <a href="Description-mug.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -425,7 +431,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
+            <a href="Description-mug.php" class="A recommended-1">
                 <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
@@ -436,12 +442,12 @@
     </div>
     <br><br><br>
     <br><br><br>
-    <h1>สินค้าแนะนำ</h1>
+    <h1 class="H1">สินค้าแนะนำ</h1>
 
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
@@ -450,7 +456,7 @@
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
@@ -458,7 +464,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
@@ -466,7 +472,7 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
                 <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div>Add a description of the image here</div>
@@ -507,7 +513,6 @@
                                                                 width="Auto"></a>
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
                                                                                    height="50px" width="Auto"></a>
-
 
             </div>
 
