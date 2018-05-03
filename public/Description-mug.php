@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <title>Bown and Colourfull</title>
     <meta charset="utf-8">
@@ -109,7 +109,6 @@
             top: 15px;
             font-size: 40px;
             font-weight: bold;
-            /*color: #f1f1f1;*/
         }
 
         .close:hover,
@@ -269,7 +268,6 @@
 
         .down-1, .down-1:Hover {
             text-decoration: none;
-            /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
 
@@ -313,7 +311,6 @@
             color: red;
             padding: 10px;
             text-shadow: 2px 2px 4px #b3b3b3;
-            /*font-size: 60pt;*/
         }
 
         h3.description {
@@ -323,7 +320,6 @@
         /*---------------------- Start recomment ------------------------*/
 
         .recommended {
-            /*background: #f2f2f2;*/
             border: 5px solid #fff7e6;
             border-radius: 5px;
             margin-top: 5px;

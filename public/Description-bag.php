@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <title>Champadee CALOCO Bag</title>
     <meta charset="utf-8">
@@ -109,7 +109,6 @@
             top: 15px;
             font-size: 40px;
             font-weight: bold;
-            /*color: #f1f1f1;*/
         }
 
         .close:hover,
@@ -180,10 +179,10 @@
             margin-top: 10px;
         }
 
+        h1.A {
+            color: #ff9900;
+            font-size: 2.5vw;
 
-        .A, .A:hover {
-            text-decoration: none;
-            color: #ffcc00;
         }
 
         /* End คำอธิบายใต้ภาพ */
@@ -269,7 +268,6 @@
 
         .down-1, .down-1:Hover {
             text-decoration: none;
-            /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
 
@@ -286,9 +284,6 @@
         /*--------------------- End DropDown ------------------------*/
 
         .description {
-            /*background-color: black;*/
-            /*border: 1px solid red;*/
-            /*font-size: 16pt;*/
             text-align: center;
 
         }
@@ -306,25 +301,25 @@
             border-radius: 9px;
         }
 
-        .description1:hover{
+        .description1:hover {
             background-color: #ffeecc;
             color: #ff8c1a;
             border-radius: 9px;
         }
-        b.description{
+
+        b.description {
             color: red;
-            padding: 20px;
+            padding: 10px;
             text-shadow: 2px 2px 4px #b3b3b3;
-            /*font-size: 60pt;*/
         }
-        h3.description{
-            font-size: 4vw;
+
+        h3.description {
+            font-size: 3vw;
         }
 
         /*---------------------- Start recomment ------------------------*/
 
         .recommended {
-            /*background: #f2f2f2;*/
             border: 5px solid #fff7e6;
             border-radius: 5px;
             margin-top: 5px;
@@ -336,7 +331,6 @@
             border-radius: 10px;
             text-decoration: none;
             font-size: 16pt;
-            /*padding: 5px;*/
             color: #e67300;
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
@@ -355,6 +349,32 @@
             border-bottom: 6px solid #99cc00;
             border-radius: 3px;
         }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        a.dot1, a.dot1:Hover {
+            text-decoration: none;
+        }
+
+        h5 {
+            margin-top: 100px;
+            font-size: 16pt;
+            color: #e67300;
+        }
+
+        h5:hover {
+            color: black;
+        }
+
 
     </style>
 </head>
@@ -419,7 +439,7 @@
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
     <a href="mug.php" class="P">แก้ว > </a>
-    <a class="P">Champadee CALOCO Bag</a>
+    <a class="P">Bown And ColourfullChampadeeMug</a>
 </div>
 
 <!----------------------- End Path ------------------------------->
@@ -427,34 +447,48 @@
 <!----------------------- Start Description ------------------------------->
 
 <div class="container">
-    <div class="row">
+    <div class="row" >
 
-        <div class="col-sm-4">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <!--                <div class="desc">Add a description of the image here</div>-->
-            </a>
+        <div class="col-sm-4" style="text-align: center">
+            <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                                         style="width:100%" alt="Image"></div>
+            <!------------------ Start Like Share Facebook --------------------->
+
+            <script>(function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                 data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
+                 data-share="true"></div>
+
+            <!------------------ End Like Share Facebook --------------------->
+
+
         </div>
 
-        <div class="col-sm-4">
-            <a href="test.php" class="A">
-                <div class="panel-body">
-                    <h1>รายละเอียดสินค้า</h1>
-                    <p style="font-size: 18pt">แก้วมัคจำปาดีทำจากเซรามิค
-                        ..............................................................................</p>
-                </div>
-                <!--                <div class="desc">Add a description of the image here</div>-->
-            </a>
+        <div class="col-sm-5">
+            <div class="panel-body">
+                <h1 class="A" style="border-bottom: 2px solid #ffcc00">รายละเอียดสินค้า</h1>
+                <p style="font-size: 2vw">แก้วมัคคุณภาพดี ลายเส้นน้องจำปาดีแพ็คคู่ แก้วมัคสีกับแก้วมัคสีน้ำตาล
+                    ผลงานความร่วมมือระหว่างคณะวิทยาศาสตร์ (การออกแบบลวดลาย) และคณะมันฑณศิลป์ (การออกแบบแก้ว)
+                    มหาวิทยาลัยศิลปากร เหมาะสำหรับผู้ชื่นชอบความเรียบง่าย สามารถใส่เครื่องดื่มได้ทั้งร้อนและเย็น
+                    เป็นแก้วที่เผา 2 ครั้ง คุณภาพและปริมาณที่ได้จึงสวยงามคงทนโดยจะเห็นได้จากความเงาของแก้ว</p>
+            </div>
         </div>
 
-        <div class="col-sm-4 description">
+        <div class="col-sm-3 description">
 
             <div class="panel-body">
-                <h3 class="description">ราคา <b style="font-size: 7vw" class="description">250</b> บาท</h3><br>
-                <button class="description1"> <b >สั่งซื้อ</b></button>
+                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">250</b> บาท</h3><br>
+                <button class="description1"><b>สั่งซื้อ</b></button>
                 <br>
-                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b style="padding-left: 10px">ใส่ตระกร้า</b>
+                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b
+                            style="padding-left: 10px">ใส่ตระกร้า</b>
                 </button>
             </div>
 
@@ -464,6 +498,7 @@
 </div>
 
 <!----------------------- End Description ------------------------------->
+
 
 <!----------------------- Start recomment -------------------------->
 
@@ -499,11 +534,13 @@
             </a>
         </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="category.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </a>
         </div>
 
@@ -512,31 +549,29 @@
 </div>
 <br><br><br>
 <!----------------------- End recomment -------------------------->
-<!----------------------- Start Review ------------------------------->
+
+<!----------------------- Start Review Facebook ------------------------------->
 
 <div class="container">
 
-
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
+    <script>(function (d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
             if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
+            js = d.createElement(s);
+            js.id = id;
             js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="100%" data-numposts="5"></div>
+    <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+         data-width="100%" data-numposts="5"></div>
 
 </div>
 
-<!----------------------- End Review ------------------------------->
+<!----------------------- End Review Facebook ------------------------------->
+
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
-    <!--    <p>Online Store Copyright</p>-->
-    <!--    <form class="form-inline">Get deals:-->
-    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
-    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
-    <!--    </form>-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -559,24 +594,15 @@
                                                                                    height="50px" width="Auto"></a>
 
                 <div id="fb-root"></div>
-                <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
-                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-
 
             </div>
 
             <div class="col-sm-3">
                 <h3>ช่องทางชำระเงิน</h3>
-                <a ><img src="image/icon/krung.jpg" height="50px" width="Auto"></a>
-                <a ><img src="image/icon/KTB.jpg" height="50px" width="Auto"></a>
+                <a><img src="image/icon/krung.jpg" height="50px" width="Auto"></a>
+                <a><img src="image/icon/KTB.jpg" height="50px" width="Auto"></a>
                 <h3>บริการจัดส่ง</h3>
-                <a ><img src="image/icon/pn.jpg" height="50px" width="Auto"></a>
+                <a><img src="image/icon/pn.jpg" height="50px" width="Auto"></a>
             </div>
         </div>
     </div>
