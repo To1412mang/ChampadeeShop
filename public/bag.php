@@ -364,7 +364,7 @@
                     </div>
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
-                <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
+                <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
                 <!--                <li><a href="#" class="B">Contact</a></li>-->
 
             </ul>
@@ -479,11 +479,6 @@
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
-    <!--    <p>Online Store Copyright</p>-->
-    <!--    <form class="form-inline">Get deals:-->
-    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
-    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
-    <!--    </form>-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
