@@ -375,6 +375,53 @@
             color: black;
         }
 
+        /*------------- start img Gallery -----------*/
+
+        img.mySlides {
+            vertical-align: center;
+            height: 10%;
+
+        }
+
+        /* Position the image container (needed to position the left and right arrows) */
+        .container-img {
+            position: relative;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+            cursor: pointer;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Six columns side by side */
+        .column {
+            float: left;
+            width: 16.66%;
+        }
+
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+            opacity: 0.6;
+        }
+
+        .active,
+        .demo:hover {
+            opacity: 1;
+        }
+
+        /*------------- End img Gallery -----------*/
+
 
     </style>
 </head>
@@ -411,7 +458,6 @@
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
                             <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-                            <li><a href="notebook.php" class="down-2">สมุด</a></li>
                         </ul>
                     </div>
                 </li>
@@ -448,9 +494,47 @@
 <div class="container">
     <div class="row" >
 
-        <div class="col-sm-4" style="text-align: center">
-            <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                         style="width:100%" alt="Image"></div>
+        <div class="col-sm-4 container-img" style="text-align: center">
+            <div class="mySlides panel-body">
+
+                <img src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+
+                <img src="image/Mug/mug-2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="image/Mug/mug-4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <img src="image/Mug/mug-6.jpg" style="width:100%">
+            </div>
+
+
+            <div class="row" style="text-align:center">
+                <div class="column">
+                    <img class="demo cursor" src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Mug/mug-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Mug/mug-4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Mug/mug-6.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+
+            </div>
+
+
+<!--        <div class="col-sm-4" style="text-align: center">-->
+<!--            <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"-->
+<!--                                         style="width:100%" alt="Image"></div>-->
+
             <!------------------ Start Like Share Facebook --------------------->
 
             <script>(function (d, s, id) {
@@ -703,6 +787,35 @@
     });
 
     //    --------------- End Drop Down
+
+//--------------- start img Gallery ----------------
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+//--------------- end img Gallery ----------------
 
 </script>
 </body>
