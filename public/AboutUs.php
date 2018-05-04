@@ -307,7 +307,6 @@
 
         .down-1, .down-1:Hover {
             text-decoration: none;
-            /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
 
@@ -349,7 +348,8 @@
             font-size: 16pt;
             color: #e67300;
         }
-        h5:hover{
+
+        h5:hover {
             color: black;
         }
 
@@ -390,8 +390,6 @@
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
                             <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-
-
                         </ul>
                     </div>
                 </li>
@@ -423,10 +421,8 @@
 <!----------------------- End Path ------------------------------->
 
 
-<br>
+<br><br>
 <div class="container">
-
-    <h1 class="H1">แก้ว</h1>
 
     <div class="row recommended">
 
@@ -438,41 +434,9 @@
             </a>
         </div>
 
-
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-        <a href="mug.php" class="dot1 ">
-            <div class="col-sm-3 dot1 " style="text-align:center">
-                <h5><b>เพิ่มเติม</b></h5>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-
-            </div>
-        </a>
-
     </div>
 </div>
-<br><br><br>
-
 <div class="container">
-
-    <h1 class="H1">กระเป๋า</h1>
-
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
@@ -484,41 +448,10 @@
         </div>
 
 
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href=Description-bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 dot1" style="text-align:center">
-            <a href="bag.php" class="dot1">
-                <h5><b>เพิ่มเติม</b></h5>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </a>
-        </div>
-
-
     </div>
 </div>
-<br><br><br>
 
 <div class="container">
-
-    <h1 class="H1">กระบอกน้ำ</h1>
-
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
@@ -528,34 +461,6 @@
                 <div>Add a description of the image here</div>
             </a>
         </div>
-
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 dot1" style="text-align:center">
-            <a href="waterBottle.php" class="dot1">
-                <h5><b>เพิ่มเติม</b></h5>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </a>
-        </div>
-
 
     </div>
 </div>
@@ -647,6 +552,9 @@
 
 
 <script>
+
+    var b1 = document.getElementById('button1');
+
     //
     <!-- Start Account Register -->
     // Get the modal

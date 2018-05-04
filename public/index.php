@@ -337,24 +337,28 @@
         /*---------------------- End recomment ------------------------*/
 
         /*--------------------- Start DropDown ------------------------*/
-        .down{
+        .down {
             padding: 8px;
             margin-left: 6px;
 
         }
-        .down-1,.down-1:Hover{
+
+        .down-1, .down-1:Hover {
             text-decoration: none;
             /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
-        .down-1{
+
+        .down-1 {
             color: #a6a6a6;
             text-decoration: none;
         }
-        .down-2{
+
+        .down-2 {
             font-size: 16pt;
 
         }
+
         /*--------------------- End DropDown ------------------------*/
 
     </style>
@@ -460,8 +464,7 @@
 </div>
 <!--/* -----------------------------------End image slide--------------------------------------------*/-->
 
-<br>
-<!--<h1 style="padding-left: 20px">สินค้าแนะนำ</h1>-->
+<br><br>
 <div class="container">
     <div class="row">
 
@@ -538,11 +541,6 @@
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
-    <!--    <p>Online Store Copyright</p>-->
-    <!--    <form class="form-inline">Get deals:-->
-    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
-    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
-    <!--    </form>-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -563,9 +561,6 @@
                                                                 width="Auto"></a>
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
                                                                                    height="50px" width="Auto"></a>
-
-
-
             </div>
 
             <div class="col-sm-3">

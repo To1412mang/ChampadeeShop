@@ -556,14 +556,57 @@
             </a>
         </div>
 
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="container">
+
+    <h1 class="H1">เสื้อ</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>Add a description of the image here</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="waterBottle.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </a>
+        </div>
+
 
     </div>
 </div>
 
-<br>
-
-<br><br>
-
+<br><br><br>
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
     <div class="container">

@@ -417,7 +417,6 @@
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
 
             </ul>
 
