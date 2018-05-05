@@ -425,28 +425,28 @@
 
     <div class="mySlides">
         <div class="numbertext">1 / 5</div>
-        <img src="image/Bown+ColourfullChampadeeMug.png" style="width:100%">
+        <img src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%">
     </div>
 
     <div class="mySlides">
         <div class="numbertext">2 / 5</div>
-        <img src="image/ChampadeeCALICOBAG.png" style="width:100%">
+        <img src="image/Bag/ChampadeeCALICOBAG.png" style="width:100%">
     </div>
 
 
     <div class="mySlides">
         <div class="numbertext">3 / 5</div>
-        <img src="image/ChampadeeWATERBOTTLES.png" style="width:100%">
+        <img src="image/Bottle/ChampadeeWATERBOTTLES.png" style="width:100%">
     </div>
 
     <div class="mySlides">
         <div class="numbertext">4 / 5</div>
-        <img src="image/ColourfullChampadeeMug.png" style="width:100%">
+        <img src="image/Mug/ColourfullChampadeeMug.png" style="width:100%">
     </div>
 
     <div class="mySlides">
         <div class="numbertext">5 / 5</div>
-        <img src="image/BownChampadeeMug.png" style="width:100%">
+        <img src="image/Mug/BownChampadeeMug.png" style="width:100%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -470,7 +470,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -479,7 +479,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -487,7 +487,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -495,7 +495,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -503,7 +503,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Mug/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -511,7 +511,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -519,7 +519,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>
@@ -527,7 +527,7 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
                 <div class="desc">Add a description of the image here</div>
             </a>

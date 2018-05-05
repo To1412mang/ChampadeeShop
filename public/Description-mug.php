@@ -375,52 +375,56 @@
             color: black;
         }
 
-        /*------------- start img Gallery -----------*/
+        /* --------------start image slide--------------------------------------------*/
 
-        img.mySlides {
-            vertical-align: center;
-            height: 10%;
-
-        }
-
-        /* Position the image container (needed to position the left and right arrows) */
-        .container-img {
-            position: relative;
-        }
-
-        /* Hide the images by default */
         .mySlides {
             display: none;
+            border: 8px solid #00b300;
+            border-radius: 5px;
+            margin-left: 15px;
         }
 
-        /* Add a pointer when hovering over the thumbnail images */
-        .cursor {
+        img.mySlides {
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
             cursor: pointer;
+            position: absolute;
+            top: 45%;
+            width: auto;
+            padding: 15px;
+            margin-top: -22px;
+            color: #ff751a;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.1s ease;
+            border-radius: 0 3px 3px 0;
+            text-decoration: none;
+            /*background: #e6e6e6;*/
+
         }
 
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
         }
 
-        /* Six columns side by side */
-        .column {
-            float: left;
-            width: 16.66%;
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: #f2f2f2;
+            color: #ff6600;
+            text-decoration: none;
+            /*background-color: #ff6600;*/
         }
 
-        /* Add a transparency effect for thumnbail images */
-        .demo {
-            opacity: 0.6;
+        div.like-facebook, div.mySlides {
+            text-align: center;
         }
 
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
-
-        /*------------- End img Gallery -----------*/
+        /* -----------------------------------stop image slide--------------------------------------------*/
 
 
     </style>
@@ -492,62 +496,47 @@
 <!----------------------- Start Description ------------------------------->
 
 <div class="container">
-    <div class="row" >
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="panel-body">
 
-        <div class="col-sm-4 container-img" style="text-align: center">
-            <div class="mySlides panel-body">
-
-                <img src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-
-                <img src="image/Mug/mug-2.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <img src="image/Mug/mug-4.jpg" style="width:100%">
-            </div>
-
-            <div class="mySlides">
-                <img src="image/Mug/mug-6.jpg" style="width:100%">
-            </div>
-
-
-            <div class="row" style="text-align:center">
-                <div class="column">
-                    <img class="demo cursor" src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="image/Mug/mug-2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="image/Mug/mug-4.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="image/Mug/mug-6.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%">
                 </div>
 
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Mug/ColourfullChampadeeMug.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Mug/BownChampadeeMug.png" style="width:100%">
+                </div>
             </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 
-<!--        <div class="col-sm-4" style="text-align: center">-->
-<!--            <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"-->
-<!--                                         style="width:100%" alt="Image"></div>-->
+            <!--    </div>-->
 
-            <!------------------ Start Like Share Facebook --------------------->
+            <!--        <div class="col-sm-4" style="text-align: center">-->
+            <!--            <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"-->
+            <!--                                         style="width:100%" alt="Image"></div>-->
 
-            <script>(function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
-                 data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
-                 data-share="true"></div>
+            <!--            ---------------- Start Like Share Facebook --------------------->
+            <br>
+            <div class="like-facebook">
+                <script>(function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                     data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
+                     data-share="true"></div>
+            </div>
 
             <!------------------ End Like Share Facebook --------------------->
 
@@ -788,7 +777,8 @@
 
     //    --------------- End Drop Down
 
-//--------------- start img Gallery ----------------
+    //--------------- start img Gallery ----------------
+    // start Image slide
     var slideIndex = 1;
     showSlides(slideIndex);
 
@@ -796,26 +786,24 @@
         showSlides(slideIndex += n);
     }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
     function showSlides(n) {
         var i;
         var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
+
+        slides[slideIndex - 1].style.display = "block";
     }
-//--------------- end img Gallery ----------------
+
+    // end Image slide
+    //--------------- end img Gallery ----------------
 
 </script>
 </body>
