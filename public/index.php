@@ -395,6 +395,36 @@
 
         /*------------------------- End search ------------------------------*/
 
+        .H1 {
+            border-bottom: 6px solid #99cc00;
+            border-radius: 3px;
+        }
+
+        .dot1 {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        a.dot2, a.dot2:Hover {
+            text-decoration: none;
+        }
+
+        h5 {
+            margin-top: 100px;
+            font-size: 16pt;
+            color: #e67300;
+        }
+
+        h5:hover {
+            color: black;
+        }
+
     </style>
 </head>
 <body>
@@ -532,7 +562,7 @@
 <br><br>
 <div class="container">
     <div class="row">
-
+        <h1 class="H1">สินค้าแนะนำ</h1>
         <div class="col-sm-3 recommended-1">
             <a href="Description-bottle.php" class="A">
                 <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
@@ -566,20 +596,11 @@
             </a>
         </div>
 
-
-<!--        <div class="col-sm-3 recommended-1">-->
-<!--            <a href="Description-bag.php" class="A">-->
-<!--                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"-->
-<!--                                             style="width:100%" alt="Image"></div>-->
-<!--                <div class="desc">ChampaDee CALICO BAG</div>-->
-<!--            </a>-->
-<!--        </div>-->
-
         <div class="col-sm-3 recommended-1">
             <a href="Description-mug.php" class="A">
                 <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">COLOURFULL  + BROWN ChampaDee MUG</div>
+                <div class="desc">COLOURFULL + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
@@ -598,7 +619,15 @@
                 <div class="desc">COLOURFULL ChampaDee MUG</div>
             </a>
         </div>
-
+        <a href="category.php" class="dot2">
+            <div class="col-sm-3 dot2" style="text-align:center">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot1"></span>
+                <span class="dot1"></span>
+                <span class="dot1"></span>
+                <span class="dot1"></span>
+            </div>
+        </a>
     </div>
 </div>
 <br>
@@ -761,8 +790,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function(){
-        $('.dropdown-submenu a.down-2').on("click", function(e){
+    $(document).ready(function () {
+        $('.dropdown-submenu a.down-2').on("click", function (e) {
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();

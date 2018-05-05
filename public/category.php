@@ -507,7 +507,7 @@
 
     </div>
 </div>
-<br><br><br>
+<br><br>
 
 <div class="container">
 
@@ -553,7 +553,7 @@
 
     </div>
 </div>
-<br><br><br>
+<br><br>
 
 <div class="container">
 
@@ -599,7 +599,7 @@
     </div>
 </div>
 
-<br><br><br>
+<br><br>
 
 <div class="container">
 
@@ -646,7 +646,7 @@
     </div>
 </div>
 
-<br><br><br>
+<br><br>
 
 <div class="container">
 
@@ -678,6 +678,7 @@
                 <div>ChampaDee Shirt</div>
             </a>
         </div>
+
 
         <div class="col-sm-3 dot1" style="text-align:center">
             <a href="shirt.php" class="dot1">
