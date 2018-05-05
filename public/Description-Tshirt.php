@@ -593,7 +593,7 @@
         <div class="col-sm-3 description">
 
             <div class="panel-body">
-                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">250</b> บาท</h3><br>
+                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">180</b> บาท</h3><br>
                 <button class="description1" style="font-size: 2.5vw"><b>สั่งจอง</b></button>
                 <br>
                 <button class="description1" style="font-size: 2.5vw"><img src="image/icon/png/shop.png"

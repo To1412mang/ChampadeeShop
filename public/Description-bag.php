@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <title>Bown and Colourfull</title>
+    <title>กระเป๋าน้องจำปาดี</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -549,15 +549,19 @@
             <div class="panel-body">
 
                 <div class="mySlides">
-                    <img class="img-slide" src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%">
+                    <img class="img-slide" src="image/Bag/ChampadeeCALICOBAG.png" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <img class="img-slide" src="image/Mug/mugMix-1.png" style="width:100%">
+                    <img class="img-slide" src="image/Bag/bagB-1.png" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <img class="img-slide" src="image/Mug/mugMix-2.png" style="width:100%">
+                    <img class="img-slide" src="image/Bag/bagB-2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Bag/bagB-3.png" style="width:100%">
                 </div>
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -587,17 +591,15 @@
         <div class="col-sm-5">
             <div class="panel-body">
                 <h1 class="A" style="border-bottom: 2px solid #ffcc00">รายละเอียดสินค้า</h1>
-                <p style="font-size: 2vw">แก้วมัคคุณภาพดี ลายเส้นน้องจำปาดีแพ็คคู่ แก้วมัคสีกับแก้วมัคสีน้ำตาล
-                    ผลงานความร่วมมือระหว่างคณะวิทยาศาสตร์ (การออกแบบลวดลาย) และคณะมันฑณศิลป์ (การออกแบบแก้ว)
-                    มหาวิทยาลัยศิลปากร เหมาะสำหรับผู้ชื่นชอบความเรียบง่าย สามารถใส่เครื่องดื่มได้ทั้งร้อนและเย็น
-                    เป็นแก้วที่เผา 2 ครั้ง คุณภาพและปริมาณที่ได้จึงสวยงามคงทนโดยจะเห็นได้จากความเงาของแก้ว</p>
+                <p style="font-size: 2vw">กระเป๋าผ้าลายเส้นน้องจำปาดีคุณภาพดี ทนทานไม่ขาดง่าย  ลายกระเป๋าผ้าน้องจำปาดีเป็นผลงานการออกแบบลวดลายของคณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร มีอัตลักษณ์ของคณะวิทยาศาสตร์และมหาวิทยาลัยศิลปากรปรากฎในลายกระเป๋าด้วยเผื่อบ่งบอกถึงความเป็นศิลปากรที่ว่า Scientific Thinking Creativity and Morality Social Responsibility Unity (SCSU)
+                </p>
             </div>
         </div>
 
         <div class="col-sm-3 description">
 
             <div class="panel-body">
-                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">250</b> บาท</h3><br>
+                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">160</b> บาท</h3><br>
                 <button class="description1" style="font-size: 3vw"><b>สั่งซื้อ</b></button>
                 <br>
                 <button class="description1" style="font-size: 3vw"><img src="image/icon/png/shop.png" style="height: 30px"> <b
