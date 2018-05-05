@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <title>ChampaDee CALICO BAG</title>
+    <title>Bown and Colourfull</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -71,8 +71,7 @@
 
         /* Add padding to container elements */
         .container2 {
-            /*padding: 5px;*/
-
+            padding: 5px;
         }
 
         /* The Modal (background) */
@@ -282,6 +281,16 @@
 
         }
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
         /*--------------------- End DropDown ------------------------*/
 
         .description {
@@ -376,6 +385,86 @@
             color: black;
         }
 
+        /* --------------start image slide--------------------------------------------*/
+
+        .mySlides {
+            display: none;
+            border: 8px solid #00b300;
+            border-radius: 5px;
+            margin-left: 15px;
+        }
+
+        img.mySlides {
+            text-align: center;
+        }
+
+        /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 45%;
+            width: auto;
+            padding: 15px;
+            margin-top: -22px;
+            color: #ff751a;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.1s ease;
+            border-radius: 0 3px 3px 0;
+            text-decoration: none;
+            /*background: #e6e6e6;*/
+
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: #808080;
+            color: white;
+            font-size: 20pt;
+            text-decoration: none;
+            /*background-color: #ff6600;*/
+        }
+
+        div.like-facebook, div.mySlides {
+            text-align: center;
+        }
+
+        /* -----------------------------------stop image slide--------------------------------------------*/
+
+        /*------------------------- Start search ------------------------------*/
+
+        input.search[type=text] {
+            width: 120px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 14pt;
+            background-color: white;
+            background-image: url('image/magnifying-glass.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+
+        /*------------------------- End search ------------------------------*/
+
+
+
 
     </style>
 </head>
@@ -383,7 +472,7 @@
 
 <div class="jumbotron">
     <div class="container2 text-center">
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="200px" height="Auto"
+        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
              class="responsive">
     </div>
 </div>
@@ -398,7 +487,6 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
-            <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -411,13 +499,22 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
-                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-                            <li><a href="notebook.php" class="down-2">สมุด</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
+                <li><form class="search">
+                        <input class="search" type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
 
             </ul>
 
@@ -439,7 +536,7 @@
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
     <a href="mug.php" class="P">แก้ว > </a>
-    <a class="P">ChampaDee CALICO BAG</a>
+    <a class="P">Bown And ColourfullChampadeeMug</a>
 </div>
 
 <!----------------------- End Path ------------------------------->
@@ -448,23 +545,39 @@
 
 <div class="container">
     <div class="row">
+        <div class="col-sm-4">
+            <div class="panel-body">
 
-        <div class="col-sm-4" style="text-align: center">
-            <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                         style="width:100%" alt="Image"></div>
-            <!------------------ Start Like Share Facebook --------------------->
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Mug/Bown+ColourfullChampadeeMug.png" style="width:100%">
+                </div>
 
-            <script>(function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0];
-                    if (d.getElementById(id)) return;
-                    js = d.createElement(s);
-                    js.id = id;
-                    js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
-                    fjs.parentNode.insertBefore(js, fjs);
-                }(document, 'script', 'facebook-jssdk'));</script>
-            <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
-                 data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
-                 data-share="true"></div>
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Mug/mugMix-1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <img class="img-slide" src="image/Mug/mugMix-2.png" style="width:100%">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!--            ---------------- Start Like Share Facebook --------------------->
+            <br>
+            <div class="like-facebook">
+                <script>(function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = 'https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v3.0';
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/"
+                     data-layout="button_count" data-action="like" data-size="small" data-show-faces="true"
+                     data-share="true"></div>
+            </div>
 
             <!------------------ End Like Share Facebook --------------------->
 
@@ -474,20 +587,20 @@
         <div class="col-sm-5">
             <div class="panel-body">
                 <h1 class="A" style="border-bottom: 2px solid #ffcc00">รายละเอียดสินค้า</h1>
-                <p style="font-size: 2vw">กระเป๋าผ้าลายเส้นน้องจำปาดีคุณภาพดี ทนทานไม่ขาดง่าย
-                    ลายกระเป๋าผ้าน้องจำปาดีเป็นผลงานการออกแบบลวดลายของคณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร
-                    มีอัตลักษณ์ของคณะวิทยาศาสตร์และมหาวิทยาลัยศิลปากรปรากฎในลายกระเป๋าด้วยเผื่อบ่งบอกถึงความเป็นศิลปากรที่ว่า
-                    Scientific Thinking Creativity and Morality Social Responsibility Unity (SCSU)</p>
+                <p style="font-size: 2vw">แก้วมัคคุณภาพดี ลายเส้นน้องจำปาดีแพ็คคู่ แก้วมัคสีกับแก้วมัคสีน้ำตาล
+                    ผลงานความร่วมมือระหว่างคณะวิทยาศาสตร์ (การออกแบบลวดลาย) และคณะมันฑณศิลป์ (การออกแบบแก้ว)
+                    มหาวิทยาลัยศิลปากร เหมาะสำหรับผู้ชื่นชอบความเรียบง่าย สามารถใส่เครื่องดื่มได้ทั้งร้อนและเย็น
+                    เป็นแก้วที่เผา 2 ครั้ง คุณภาพและปริมาณที่ได้จึงสวยงามคงทนโดยจะเห็นได้จากความเงาของแก้ว</p>
             </div>
         </div>
 
         <div class="col-sm-3 description">
 
             <div class="panel-body">
-                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">160</b> บาท</h3><br>
-                <button class="description1"><b>สั่งซื้อ</b></button>
+                <h3 class="description">ราคา <b style="font-size: 6vw" class="description">250</b> บาท</h3><br>
+                <button class="description1" style="font-size: 3vw"><b>สั่งซื้อ</b></button>
                 <br>
-                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b
+                <button class="description1" style="font-size: 3vw"><img src="image/icon/png/shop.png" style="height: 30px"> <b
                             style="padding-left: 10px">ใส่ตระกร้า</b>
                 </button>
             </div>
@@ -510,27 +623,27 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-bottle.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>Champadee WATER BOTTLES</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+            <a href="Description-bottle.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>Champadee CALICO BAG</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirt.jpg" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee T-Shirt</div>
             </a>
         </div>
 
@@ -649,10 +762,8 @@
 <!-- End Account Register -->
 
 <!-------------- Start Top ----------------->
-
-<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+<button  id="myBtn" class="buttonTop" onclick="topFunction()" title="Go to top"><i class="fa fa-angle-double-up"></i>
 </button>
-
 <!-------------- End Top ----------------->
 
 <script>
@@ -695,8 +806,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
@@ -704,6 +815,34 @@
     });
 
     //    --------------- End Drop Down
+
+    //--------------- start img Gallery ----------------
+    // start Image slide
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+
+        slides[slideIndex - 1].style.display = "block";
+    }
+
+    // end Image slide
+    //--------------- end img Gallery ----------------
 
 </script>
 </body>

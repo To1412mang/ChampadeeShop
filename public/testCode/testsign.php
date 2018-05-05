@@ -156,7 +156,7 @@
 <div class="jumbotron">
     <div class="container text-center">
 <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" class="responsive"  width="500" height="250" class="responsive">
+        <img src="../image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" class="responsive" width="500" height="250" class="responsive">
         <br><br>
         <p>Champadee Shop</p>
     </div>

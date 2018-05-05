@@ -72,8 +72,8 @@ and open the template in the editor.
 <body>
 
 <div class="header">
-    <a href="index.php" class="logo"> <img src="image/SCSUChampadeeBranding-4.png" class="img-responsive"
-                                           alt="ChampadeeShop" width="400" height="200"></a>
+    <a href="../index.php" class="logo"> <img src="../image/SCSUChampadeeBranding-4.png" class="img-responsive"
+                                              alt="ChampadeeShop" width="400" height="200"></a>
     <div class="header-right">
         <a class="active" href="#home">Home</a>
         <a href="#contact">Contact</a>

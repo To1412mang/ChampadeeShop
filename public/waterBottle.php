@@ -316,12 +316,45 @@
 
         }
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
         /*--------------------- End DropDown ------------------------*/
         .H1 {
             border-bottom: 6px solid #99cc00;
             border-radius: 3px;
         }
 
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        a.dot1, a.dot1:Hover {
+            text-decoration: none;
+        }
+        h5 {
+            margin-top: 100px;
+            font-size: 16pt;
+            color: #e67300;
+        }
+
+        h5:hover {
+            color: black;
+        }
 
     </style>
 </head>
@@ -356,7 +389,13 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
-                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -395,37 +434,37 @@
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-bottle.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">ChampaDee Water Bottle</div>
             </a>
         </div>
 
 
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="test.php" class="A recommended-1">-->
+<!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div class="desc">Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="test.php" class="A recommended-1">-->
+<!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div class="desc">Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="test.php" class="A recommended-1">-->
+<!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div class="desc">Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
 
 
     </div>
@@ -436,38 +475,39 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee T-shirt</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee CALICO BAG</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>COLOURFULL  + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="category.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </a>
         </div>
-
 
     </div>
 </div>
@@ -596,8 +636,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();

@@ -190,11 +190,6 @@
 
         }
 
-        .A, .A:hover {
-            text-decoration: none;
-            color: #ffcc00;
-        }
-
         /* End คำอธิบายใต้ภาพ */
 
         .navbar-toggle {
@@ -321,6 +316,16 @@
 
         }
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
         /*--------------------- End DropDown ------------------------*/
 
         .H1 {
@@ -389,9 +394,13 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
-                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-
-
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -431,27 +440,27 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+            <a href="Description-mugBown.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>BROWN ChampaDee MUG</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
             <a href="Description-mug.php" class="recommended-1">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>COLOURFULL + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+            <a href="Description-mugColor.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>COLOURFULL ChampaDee MUG</div>
             </a>
         </div>
         <a href="mug.php" class="dot1 ">
@@ -477,38 +486,38 @@
 
         <div class="col-sm-3 recommended-1">
             <a href="Description-bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee CALICO BAG</div>
             </a>
         </div>
 
 
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href=Description-bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 dot1" style="text-align:center">
-            <a href="bag.php" class="dot1">
-                <h5><b>เพิ่มเติม</b></h5>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </a>
-        </div>
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="Description-bag.php" class="recommended-1">-->
+<!--                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div>Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href=Description-bag.php" class="recommended-1">-->
+<!--                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div>Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-3 dot1" style="text-align:center">-->
+<!--            <a href="bag.php" class="dot1">-->
+<!--                <h5><b>เพิ่มเติม</b></h5>-->
+<!--                <span class="dot"></span>-->
+<!--                <span class="dot"></span>-->
+<!--                <span class="dot"></span>-->
+<!--                <span class="dot"></span>-->
+<!--            </a>-->
+<!--        </div>-->
 
 
     </div>
@@ -522,39 +531,39 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-bottle.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>Champadee WATER BOTTLES</div>
             </a>
         </div>
 
 
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 dot1" style="text-align:center">
-            <a href="waterBottle.php" class="dot1">
-                <h5><b>เพิ่มเติม</b></h5>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </a>
-        </div>
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="bag.php" class="recommended-1">-->
+<!--                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div>Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="bag.php" class="recommended-1">-->
+<!--                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div>Add a description of the image here</div>-->
+<!--            </a>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="col-sm-3 dot1" style="text-align:center">-->
+<!--            <a href="waterBottle.php" class="dot1">-->
+<!--                <h5><b>เพิ่มเติม</b></h5>-->
+<!--                <span class="dot"></span>-->
+<!--                <span class="dot"></span>-->
+<!--                <span class="dot"></span>-->
+<!--                <span class="dot"></span>-->
+<!--            </a>-->
+<!--        </div>-->
 
     </div>
 </div>
@@ -563,37 +572,84 @@
 
 <div class="container">
 
-    <h1 class="H1">เสื้อ</h1>
+    <h1 class="H1">เสื้อยืด</h1>
 
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtV.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee V neck T-shirt</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtC.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee T-Shirt</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee T-Shirt And V neck T-shirt</div>
             </a>
         </div>
 
         <div class="col-sm-3 dot1" style="text-align:center">
-            <a href="waterBottle.php" class="dot1">
+            <a href="T-shirt.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+<br><br><br>
+
+<div class="container">
+
+    <h1 class="H1">เสื้อคอปก</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-shirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Shirt/shirt-1.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>ChampaDee Shirt</div>
+            </a>
+        </div>
+
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-shirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Shirt/shirt-2.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>ChampaDee Shirt</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-shirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Shirt/shirt-1.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>ChampaDee Shirt</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="shirt.php" class="dot1">
                 <h5><b>เพิ่มเติม</b></h5>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -728,8 +784,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();

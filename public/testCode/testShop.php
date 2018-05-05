@@ -287,7 +287,7 @@
 <div class="jumbotron">
     <div class="container2 text-center">
         <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px" class="responsive">
+        <img src="../image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px" class="responsive">
 <!--        <br><br>-->
         <!--        <p>Champadee Shop</p>-->
     </div>
@@ -302,7 +302,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="testShop.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <a href="testShop.php"> <img src="../image/logo-1.png" class="responsive-1"></a>
             <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">

@@ -12,9 +12,9 @@
     <style>
 
         body {
-            font-family: "TH Sarabun New", Arial, Helvetica, sans-serif;
+             font-family: "TH Sarabun New", Arial, Helvetica, sans-serif;
 
-        }
+         }
 
         * {
             box-sizing: border-box;
@@ -171,8 +171,6 @@
             height: auto;
             margin-right: 10px;
             display: block;
-            /*margin-left: 10px;*/
-            /*margin-right: auto;*/
             position: relative;
         }
 
@@ -239,9 +237,6 @@
             border-radius: 10px;
         }
 
-        /*h2{*/
-        /*font-size: 18pt;*/
-        /*}*/
         h3 {
             font-size: 20pt;
         }
@@ -321,24 +316,53 @@
 
         }
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
         /*--------------------- End DropDown ------------------------*/
         .H1 {
             border-bottom: 6px solid #99cc00;
             border-radius: 3px;
-            /*background-color: lightgrey;*/
         }
 
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        a.dot1, a.dot1:Hover {
+            text-decoration: none;
+        }
+        h5 {
+            margin-top: 100px;
+            font-size: 16pt;
+            color: #e67300;
+        }
+
+        h5:hover {
+            color: black;
+        }
 
     </style>
 </head>
 <body>
 <div class="jumbotron">
     <div class="container2 text-center">
-        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
         <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
              class="responsive">
-        <!--        <br><br>-->
-        <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
@@ -365,15 +389,19 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
-                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
-
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </li>
 
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
 
             </ul>
 
@@ -393,7 +421,7 @@
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a class="P">เสื้อ</a>
+    <a class="P">เสื้อคอปก</a>
 
 
 </div>
@@ -401,42 +429,42 @@
 <!----------------------- End Path ------------------------------->
 
 
-<br>
+<br><br>
 <div class="container">
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+            <a href="Description-shirt.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/Shirt/shirt-2.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">ChampaDee Shirt</div>
             </a>
         </div>
 
 
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
 
 
     </div>
@@ -447,38 +475,39 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee T-shirt</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee CALICO BAG</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>COLOURFULL  + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="category.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </a>
         </div>
-
 
     </div>
 </div>
@@ -488,11 +517,6 @@
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
-    <!--    <p>Online Store Copyright</p>-->
-    <!--    <form class="form-inline">Get deals:-->
-    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
-    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
-    <!--    </form>-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -513,7 +537,6 @@
                                                                 width="Auto"></a>
                 <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
                                                                                    height="50px" width="Auto"></a>
-
 
             </div>
 
@@ -613,8 +636,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();

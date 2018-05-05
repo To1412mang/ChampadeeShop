@@ -281,6 +281,16 @@
 
         }
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
         /*--------------------- End DropDown ------------------------*/
 
         .description {
@@ -414,8 +424,9 @@
 
         /* On hover, add a black background color with a little bit see-through */
         .prev:hover, .next:hover {
-            background-color: #f2f2f2;
-            color: #ff6600;
+            background-color: #808080;
+            color: white;
+            font-size: 20pt;
             text-decoration: none;
             /*background-color: #ff6600;*/
         }
@@ -425,6 +436,34 @@
         }
 
         /* -----------------------------------stop image slide--------------------------------------------*/
+
+        /*------------------------- Start search ------------------------------*/
+
+        input.search[type=text] {
+            width: 120px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 14pt;
+            background-color: white;
+            background-image: url('image/magnifying-glass.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+
+        /*------------------------- End search ------------------------------*/
+
+
 
 
     </style>
@@ -448,7 +487,6 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
-            <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -461,12 +499,22 @@
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
-                            <li><a href="shirt.php" class="down-2">เสื้อ</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
+                <li><form class="search">
+                        <input class="search" type="text" name="search" placeholder="Search..">
+                    </form>
+                </li>
 
             </ul>
 
@@ -505,22 +553,15 @@
                 </div>
 
                 <div class="mySlides">
-                    <img class="img-slide" src="image/Mug/ColourfullChampadeeMug.png" style="width:100%">
+                    <img class="img-slide" src="image/Mug/mugMix-1.png" style="width:100%">
                 </div>
 
                 <div class="mySlides">
-                    <img class="img-slide" src="image/Mug/BownChampadeeMug.png" style="width:100%">
+                    <img class="img-slide" src="image/Mug/mugMix-2.png" style="width:100%">
                 </div>
             </div>
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-
-            <!--    </div>-->
-
-            <!--        <div class="col-sm-4" style="text-align: center">-->
-            <!--            <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png" class="img-responsive"-->
-            <!--                                         style="width:100%" alt="Image"></div>-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
             <!--            ---------------- Start Like Share Facebook --------------------->
             <br>
@@ -557,9 +598,9 @@
 
             <div class="panel-body">
                 <h3 class="description">ราคา <b style="font-size: 6vw" class="description">250</b> บาท</h3><br>
-                <button class="description1"><b>สั่งซื้อ</b></button>
+                <button class="description1" style="font-size: 2.5vw"><b>สั่งซื้อ</b></button>
                 <br>
-                <button class="description1"><img src="image/icon/png/shop.png" style="height: 30px"> <b
+                <button class="description1" style="font-size: 2.5vw"><img src="image/icon/png/shop.png" style="height: 30px"> <b
                             style="padding-left: 10px">ใส่ตระกร้า</b>
                 </button>
             </div>
@@ -582,27 +623,27 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>Champadee CALICO BAG</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+            <a href="Description-bottle.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>Champadee WATER BOTTLES</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirt.jpg" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
+                <div>ChampaDee T-Shirt</div>
             </a>
         </div>
 
@@ -721,10 +762,8 @@
 <!-- End Account Register -->
 
 <!-------------- Start Top ----------------->
-
-<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
-</button>
-
+        <button  id="myBtn" class="buttonTop" onclick="topFunction()" title="Go to top"><i class="fa fa-angle-double-up"></i>
+        </button>
 <!-------------- End Top ----------------->
 
 <script>
@@ -767,8 +806,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();

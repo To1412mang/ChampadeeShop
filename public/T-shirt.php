@@ -1,23 +1,20 @@
 <!DOCTYPE html>
-<html lang="en th">
+<html lang="en">
 <head>
-    <title>TestShop</title>
+    <title>กระบอกน้ำ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 
     <style>
 
         body {
-            font-family: "TH Sarabun New",Arial, Helvetica, sans-serif;
+             font-family: "TH Sarabun New", Arial, Helvetica, sans-serif;
 
-
-        }
+         }
 
         * {
             box-sizing: border-box;
@@ -45,7 +42,7 @@
         /* Set a style for all buttons */
         .cancelbtn, .signupbtn {
             background-color: #4CAF50;
-            color: white;  
+            color: white;
             padding: 14px 20px;
             margin: 8px 0;
             border: none;
@@ -137,7 +134,7 @@
 
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             border-radius: 0;
             font-size: 14pt;
 
@@ -161,87 +158,11 @@
             height: auto;
         }
 
-        /* --------------start image slide--------------------------------------------*/
-
-        /* Position the image container (needed to position the left and right arrows) */
-        .container1 {
-            position: relative;
-            width: 50%;
-            max-width: 400px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-
-        }
-
-        /* Hide the images by default */
-        .mySlides {
-            display: none;
-        }
-
-        /* Next & previous buttons */
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 40%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-            text-decoration: none;
-        }
-
-        /* Position the "next button" to the right */
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        /* On hover, add a black background color with a little bit see-through */
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-            text-decoration: none;
-            color: white;
-        }
-
-        /* Number text (1/3 etc) */
-        .numbertext {
-            color: #ffcc00;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-
-        /* The dots/bullets/indicators */
-        .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-
-        .active, .dot:hover {
-            background-color: #717171;
-        }
-
-        /* -----------------------------------stop image slide--------------------------------------------*/
-
         .container-fluid {
             background: #ffcc00;
             font-weight: bold;
             font-size: 24px;
+
         }
 
         .responsive-1 {
@@ -250,16 +171,12 @@
             height: auto;
             margin-right: 10px;
             display: block;
-            /*margin-left: 10px;*/
-            /*margin-right: auto;*/
             position: relative;
         }
 
         .collapse {
             margin-top: 10px;
         }
-
-
 
         /* คำอธิบายใต้ภาพ */
         div.desc {
@@ -275,15 +192,21 @@
             text-decoration: none;
             color: #ffcc00;
         }
+
         /* End คำอธิบายใต้ภาพ */
 
-        .navbar-toggle{
+        .navbar-toggle {
             margin-top: 20px;
         }
+
+        h2 {
+            font-size: 16pt;
+        }
+
         /*--------------- Start Top --------------*/
 
         .buttonTop {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         #myBtn {
@@ -298,8 +221,8 @@
             background-color: #ff6600;
             color: white;
             cursor: pointer;
-            padding: 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 5px;
         }
 
         #myBtn:hover {
@@ -310,41 +233,136 @@
 
         /* ---------------- Start Footer -------------------*/
 
-        img.sc{
+        img.sc {
             border-radius: 10px;
         }
 
-        h3{
+        h3 {
             font-size: 20pt;
         }
 
         /* ---------------- End Footer -------------------*/
 
+        /*---------------------- Start path --------------------------*/
+        .path {
+            padding-left: 20px;
+            font-size: 16pt;
+        }
+
+        .P, .P:hover {
+            text-decoration: none;
+            color: green;
+
+        }
+
+        .P:hover {
+            background: #f2f2f2;
+            padding: 5px;
+            color: black;
+        }
+
+        /*---------------------- End path --------------------------*/
+
         /*---------------------- Start recomment ------------------------*/
 
-        div.recommended-1:Hover, a.recommended-1:Hover, a.A:Hover{
+        .recommended {
+            /*background: #f2f2f2;*/
+            border: 5px solid #fff7e6;
+            border-radius: 5px;
+            margin-top: 5px;
+
+        }
+
+        div.recommended-1:Hover, a.recommended-1:Hover {
             background: #fff2e6;
             border-radius: 10px;
             text-decoration: none;
             font-size: 16pt;
             /*padding: 5px;*/
             color: #e67300;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .recommended-1, a.recommended-1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16pt;
         }
 
         /*---------------------- End recomment ------------------------*/
 
+        /*--------------------- Start DropDown ------------------------*/
+        .down {
+            padding: 8px;
+            margin-left: 6px;
+
+        }
+
+        .down-1, .down-1:Hover {
+            text-decoration: none;
+            /*border: 5px solid #f2f2f2;*/
+            color: #a6a6a6;
+        }
+
+        .down-1 {
+            color: #a6a6a6;
+            text-decoration: none;
+        }
+
+        .down-2 {
+            font-size: 16pt;
+
+        }
+
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
+        /*--------------------- End DropDown ------------------------*/
+        .H1 {
+            border-bottom: 6px solid #99cc00;
+            border-radius: 3px;
+        }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        a.dot1, a.dot1:Hover {
+            text-decoration: none;
+        }
+        h5 {
+            margin-top: 100px;
+            font-size: 16pt;
+            color: #e67300;
+        }
+
+        h5:hover {
+            color: black;
+        }
 
     </style>
 </head>
 <body>
-
 <div class="jumbotron">
     <div class="container2 text-center">
-        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
-        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px" class="responsive">
-<!--        <br><br>-->
-        <!--        <p>Champadee Shop</p>-->
+        <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
+             class="responsive">
     </div>
 </div>
 
@@ -357,21 +375,40 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="testShop.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
             <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="testShop.php" class="B">Home</a></li>
-                <li><a href="#" class="B">Products</a></li>
-                <li><a href="#" class="B">Deals</a></li>
-                <li><a href="#" class="B">Stores</a></li>
-                <li><a href="#" class="B">Contact</a></li>
+                <li class="active"><a href="index.php" class="B">หน้าแรก</a></li>
+                <li>
+                    <div class="dropdown down">
+                        <a data-toggle="dropdown" class="down-1">ประเภทสินค้า <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="category.php" class="down-2">ทั้งหมด</a></li>
+                            <li><a href="mug.php" class="down-2">แก้ว</a></li>
+                            <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
+                            <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
+                <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
+
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
                 <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
-                                class="glyphicon glyphicon-user"></span> Your Account</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
             </ul>
         </div>
     </div>
@@ -379,117 +416,96 @@
 
 <!---------------------------------- End header ----------------------------------------------->
 
-<!--/* -----------------------------------start image slide--------------------------------------------*/-->
+<!---------------------------------- Start Path ----------------------------------------------->
 
-<div class="container1">
+<div class="path">
+    <a href="index.php" class="P">หน้าแรก > </a>
+    <a href="category.php" class="P">ประเภท > </a>
+    <a class="P">เสื้อคอปก</a>
 
-    <div class="mySlides">
-        <div class="numbertext">1 / 5</div>
-        <img src="image/Bown+ColourfullChampadeeMug.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">2 / 5</div>
-        <img src="image/ChampadeeCALICOBAG.png" style="width:100%">
-    </div>
-
-
-    <div class="mySlides">
-        <div class="numbertext">3 / 5</div>
-        <img src="image/ChampadeeWATERBOTTLES.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">4 / 5</div>
-        <img src="image/ColourfullChampadeeMug.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <div class="numbertext">5 / 5</div>
-        <img src="image/BownChampadeeMug.png" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
 
 </div>
-<!--/* -----------------------------------End image slide--------------------------------------------*/-->
 
-<br>
+<!----------------------- End Path ------------------------------->
+
+
+<br><br>
 <div class="container">
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
+            <a href="Description-shirt.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/Shirt/shirt-2.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">ChampaDee Shirt</div>
+            </a>
+        </div>
+
+
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+
+
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <h1 class="H1">สินค้าแนะนำ</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>ChampaDee T-shirt</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ColourfullChampadeeMug.png" class="img-responsive"
+            <a href="Description-bag.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+                <div>ChampaDee CALICO BAG</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+                <div>COLOURFULL  + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="test.php" class="A">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="category.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </a>
         </div>
 
@@ -501,11 +517,6 @@
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
-    <!--    <p>Online Store Copyright</p>-->
-    <!--    <form class="form-inline">Get deals:-->
-    <!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
-    <!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
-    <!--    </form>-->
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -522,9 +533,10 @@
             <div class="col-sm-3">
                 <h3>ช่องทางติดต่อ</h3>
                 <h2>E-mail : science@su.sc.th</h2>
-                <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
-                <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
-
+                <a href="http://www.sc.su.ac.th/index.php"><img class="sc" src="image/icon/susc.jpg" height="50px"
+                                                                width="Auto"></a>
+                <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
+                                                                                   height="50px" width="Auto"></a>
 
             </div>
 
@@ -538,17 +550,6 @@
         </div>
     </div>
     <h4>Online Store Copyright by SCSU</h4>
-</footer>
-<!-------------------------------- End Footer ----------------------------->
-
-
-<!-------------------------------- Start Footer ----------------------------->
-<footer class="container-fluid text-center">
-    <p>Online Store Copyright</p>
-    <form class="form-inline">Get deals:
-        <input type="email" class="form-control" size="50" placeholder="Email Address">
-        <button type="button" class="btn btn-danger">Sign Up</button>
-    </form>
 </footer>
 <!-------------------------------- End Footer ----------------------------->
 
@@ -590,10 +591,10 @@
 
 <!-------------- Start Top ----------------->
 
-<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
+<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+</button>
 
 <!-------------- End Top ----------------->
-
 
 
 <script>
@@ -611,42 +612,6 @@
     //
     <!-- End Account Register -->
 
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    // start Image slide
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-    }
-
-    // end Image slide
-
-    //    ----------- Start Top -------------
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
@@ -668,6 +633,19 @@
     }
 
     //    ----------- End Top -------------
+
+    //    --------------- Start Drop Down
+
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+
+    //    --------------- End Drop Down
+
 </script>
 </body>
 </html>

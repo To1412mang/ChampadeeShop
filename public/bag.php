@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>กระเป๋าจำปาดี</title>
+    <title>กระบอกน้ำ</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
@@ -138,7 +138,6 @@
             border-radius: 0;
             font-size: 14pt;
 
-
         }
 
         /* Remove the jumbotron's default bottom margin */
@@ -159,7 +158,6 @@
             height: auto;
         }
 
-
         .container-fluid {
             background: #ffcc00;
             font-weight: bold;
@@ -173,8 +171,6 @@
             height: auto;
             margin-right: 10px;
             display: block;
-            /*margin-left: 10px;*/
-            /*margin-right: auto;*/
             position: relative;
         }
 
@@ -210,7 +206,7 @@
         /*--------------- Start Top --------------*/
 
         .buttonTop {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
         #myBtn {
@@ -237,21 +233,18 @@
 
         /* ---------------- Start Footer -------------------*/
 
-        img.sc{
+        img.sc {
             border-radius: 10px;
         }
 
-        /*h2{*/
-        /*font-size: 18pt;*/
-        /*}*/
-        h3{
+        h3 {
             font-size: 20pt;
         }
 
         /* ---------------- End Footer -------------------*/
 
         /*---------------------- Start path --------------------------*/
-        .path{
+        .path {
             padding-left: 20px;
             font-size: 16pt;
         }
@@ -261,16 +254,18 @@
             color: green;
 
         }
-        .P:hover{
+
+        .P:hover {
             background: #f2f2f2;
             padding: 5px;
             color: black;
         }
+
         /*---------------------- End path --------------------------*/
 
         /*---------------------- Start recomment ------------------------*/
 
-        .recommended{
+        .recommended {
             /*background: #f2f2f2;*/
             border: 5px solid #fff7e6;
             border-radius: 5px;
@@ -278,16 +273,17 @@
 
         }
 
-        div.recommended-1:Hover, a.recommended-1:Hover{
+        div.recommended-1:Hover, a.recommended-1:Hover {
             background: #fff2e6;
             border-radius: 10px;
             text-decoration: none;
             font-size: 16pt;
             /*padding: 5px;*/
             color: #e67300;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
-        .recommended-1,a.recommended-1{
+
+        .recommended-1, a.recommended-1 {
             text-align: center;
             margin-bottom: 10px;
             color: #ffcc00;
@@ -298,30 +294,57 @@
         /*---------------------- End recomment ------------------------*/
 
         /*--------------------- Start DropDown ------------------------*/
-        .down{
+        .down {
             padding: 8px;
             margin-left: 6px;
 
         }
-        .down-1,.down-1:Hover{
+
+        .down-1, .down-1:Hover {
             text-decoration: none;
             /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
-        .down-1{
+
+        .down-1 {
             color: #a6a6a6;
             text-decoration: none;
         }
-        .down-2{
+
+        .down-2 {
             font-size: 16pt;
 
         }
-        /*--------------------- End DropDown ------------------------*/
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
+        /*--------------------- End DropDown ------------------------*/
         .H1 {
             border-bottom: 6px solid #99cc00;
             border-radius: 3px;
-            /*background-color: lightgrey;*/
+        }
+
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
+        }
+
+        a.dot1, a.dot1:Hover {
+            text-decoration: none;
         }
 
     </style>
@@ -329,16 +352,13 @@
 <body>
 <div class="jumbotron">
     <div class="container2 text-center">
-        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
         <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
              class="responsive">
-        <!--        <br><br>-->
-        <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
 <!---------------------------------- Start header ----------------------------------------------->
-<nav class="navbar navbar-inverse" >
+<nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -354,18 +374,26 @@
                 <li class="active"><a href="index.php" class="B">หน้าแรก</a></li>
                 <li>
                     <div class="dropdown down">
-                        <a data-toggle="dropdown" class="down-1" >ประเภทสินค้า <span class="caret"></span></a>
+                        <a data-toggle="dropdown" class="down-1">ประเภทสินค้า <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="category.php" class="down-2">ทั้งหมด</a></li>
                             <li><a href="mug.php" class="down-2">แก้ว</a></li>
                             <li><a href="bag.php" class="down-2">กระเป๋า</a></li>
                             <li><a href="waterBottle.php" class="down-2">กระบอกน้ำ</a></li>
+                            <li class="dropdown-submenu">
+                                <a class="down-2">เสื้อ<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </li>
+
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
 
             </ul>
 
@@ -385,7 +413,7 @@
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a  class="P">กระเป๋า</a>
+    <a class="P">กระเป๋าน้องจำปาดี</a>
 
 
 </div>
@@ -393,83 +421,85 @@
 <!----------------------- End Path ------------------------------->
 
 
-<br>
+<br><br>
 <div class="container">
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
             <a href="Description-bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
+                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
+                <div class="desc">ChampaDee CALICO BAG</div>
             </a>
         </div>
 
 
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
-
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-bag.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div class="desc">Add a description of the image here</div>
-            </a>
-        </div>
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
 
 
     </div>
-<br><br><br><br><br><br>
+    <br><br><br>
+    <br><br><br>
     <h1 class="H1">สินค้าแนะนำ</h1>
 
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>ChampaDee T-shirt</div>
             </a>
         </div>
 
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
+            <a href="Description-bottle.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>ChampaDee CALICO BAG</div>
             </a>
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+                <div>COLOURFULL  + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/Bown+ColourfullChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div >Add a description of the image here</div>
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="category.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
             </a>
         </div>
-
 
     </div>
 </div>
@@ -495,8 +525,10 @@
             <div class="col-sm-3">
                 <h3>ช่องทางติดต่อ</h3>
                 <h2>E-mail : science@su.sc.th</h2>
-                <a href="http://www.sc.su.ac.th/index.php" ><img class="sc" src="image/icon/susc.jpg" height="50px" width="Auto"></a>
-                <a href="https://www.facebook.com/ScienceSilpakornUniversity" ><img src="image/icon/348.png" height="50px" width="Auto"></a>
+                <a href="http://www.sc.su.ac.th/index.php"><img class="sc" src="image/icon/susc.jpg" height="50px"
+                                                                width="Auto"></a>
+                <a href="https://www.facebook.com/ScienceSilpakornUniversity"><img src="image/icon/348.png"
+                                                                                   height="50px" width="Auto"></a>
 
             </div>
 
@@ -551,7 +583,8 @@
 
 <!-------------- Start Top ----------------->
 
-<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-angle-double-up"></i> </button>
+<button class="buttonTop" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i>
+</button>
 
 <!-------------- End Top ----------------->
 
@@ -595,8 +628,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
