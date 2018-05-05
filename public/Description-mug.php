@@ -460,10 +460,7 @@
             width: 100%;
         }
 
-
         /*------------------------- End search ------------------------------*/
-
-
 
 
     </style>
@@ -502,8 +499,8 @@
                             <li class="dropdown-submenu">
                                 <a class="down-2">เสื้อ<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
-                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -511,11 +508,14 @@
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
-                <li><form class="search">
+
+                <!----------------------- Start Search ------------------------------>
+                <li>
+                    <form class="search">
                         <input class="search" type="text" name="search" placeholder="Search..">
                     </form>
                 </li>
-
+                <!----------------------- End Search ------------------------------>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
@@ -600,7 +600,8 @@
                 <h3 class="description">ราคา <b style="font-size: 6vw" class="description">250</b> บาท</h3><br>
                 <button class="description1" style="font-size: 2.5vw"><b>สั่งซื้อ</b></button>
                 <br>
-                <button class="description1" style="font-size: 2.5vw"><img src="image/icon/png/shop.png" style="height: 30px"> <b
+                <button class="description1" style="font-size: 2.5vw"><img src="image/icon/png/shop.png"
+                                                                           style="height: 30px"> <b
                             style="padding-left: 10px">ใส่ตระกร้า</b>
                 </button>
             </div>
@@ -762,8 +763,8 @@
 <!-- End Account Register -->
 
 <!-------------- Start Top ----------------->
-        <button  id="myBtn" class="buttonTop" onclick="topFunction()" title="Go to top"><i class="fa fa-angle-double-up"></i>
-        </button>
+<button id="myBtn" class="buttonTop" onclick="topFunction()" title="Go to top"><i class="fa fa-angle-double-up"></i>
+</button>
 <!-------------- End Top ----------------->
 
 <script>
@@ -806,8 +807,8 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function(){
-        $('.dropdown-submenu a.down-2').on("click", function(e){
+    $(document).ready(function () {
+        $('.dropdown-submenu a.down-2').on("click", function (e) {
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
