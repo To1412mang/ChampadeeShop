@@ -533,7 +533,7 @@
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a href="mug.php" class="P">เสื้อยืด > </a>
+    <a href="T-shirt.php" class="P">เสื้อยืด > </a>
     <a class="P">สื้อยืดลายน้องจำปาดี</a>
 </div>
 

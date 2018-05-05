@@ -270,30 +270,19 @@
 
         /*---------------------- Start recomment ------------------------*/
 
-        .recommended {
-            /*background: #f2f2f2;*/
-            border: 5px solid #fff7e6;
-            border-radius: 5px;
-            margin-top: 5px;
-
-        }
-
-        div.recommended-1:Hover, a.recommended-1:Hover {
-            background: #fff2e6;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 16pt;
-            /*padding: 5px;*/
-            color: #e67300;
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .recommended-1, a.recommended-1 {
+        .recommended-1 {
             text-align: center;
-            margin-bottom: 10px;
-            color: #ffcc00;
+            /*margin-bottom: 10px;*/
+            color: #009933;
+            background: #fff7e6;
             text-decoration: none;
-            font-size: 16pt;
+            /*font-size: 16pt;*/
+            margin-top: 20px;
+        }
+
+        h1.recommended-1 {
+            color: black;
+
         }
 
         /*---------------------- End recomment ------------------------*/
@@ -320,37 +309,22 @@
 
         }
 
+        .dropdown-submenu {
+            position: relative;
+        }
+
+        .dropdown-submenu .dropdown-menu {
+            top: 0;
+            left: 100%;
+            margin-top: -1px;
+        }
+
         /*--------------------- End DropDown ------------------------*/
 
-        .H1 {
-            border-bottom: 6px solid #00802b;
-            border-radius: 3px;
-            /*background-color: lightgrey;*/
-        }
+        /*-----------------------Map-----------------------*/
 
-        .dot {
-            height: 25px;
-            width: 25px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            text-decoration: none;
-            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
-            margin-top: 10px;
-        }
-
-        a.dot1, a.dot1:Hover {
-            text-decoration: none;
-        }
-
-        h5 {
-            margin-top: 100px;
-            font-size: 16pt;
-            color: #e67300;
-        }
-
-        h5:hover {
-            color: black;
+        #map {
+            height: 100%;
         }
 
     </style>
@@ -358,11 +332,8 @@
 <body>
 <div class="jumbotron">
     <div class="container2 text-center">
-        <!--        <h1>Champadee Shop</h1>--> <!-- class="img-responsive"-->
         <img src="image/SCSUChampadeeBranding-4.png" alt="ChampadeeShop" width="500px" height="250px"
              class="responsive">
-        <!--        <br><br>-->
-        <!--        <p>Champadee Shop</p>-->
     </div>
 </div>
 
@@ -376,7 +347,6 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
-            <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -394,14 +364,15 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
                                     <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </li>
+
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
-                <li><a href="#" class="B">เกี่ยวกับเรา</a></li>
-                <!--                <li><a href="#" class="B">Contact</a></li>-->
+                <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
 
             </ul>
 
@@ -428,52 +399,49 @@
 
 
 <br><br>
+
 <div class="container">
+    <div class="row">
 
-    <div class="row recommended">
+        <div class="col-sm-3 recommended-1" style="font-size: 2.5vw">
+            <p><b>Champadee Shop เป็นเว็บไซต์สำหรับขายสินค้าที่คณะวิทยาศาสตร์ โดยสินค้าที่นำมาขายจะร่วมกับศิษย์เก่า
+                    และนักศึกษาของคณะวิทยาศาสตร์</b></p>
+        </div>
 
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
-                <div class="panel-body"><img src="image/BownChampadeeMug.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
+        <div class="col-sm-9">
+
+            <img src="image/science.jpg" class="img-responsive"
+                 style="width:100%" alt="Image">
+
         </div>
 
     </div>
 </div>
-<div class="container">
-    <div class="row recommended">
-
-        <div class="col-sm-3 recommended-1">
-            <a href="Description-bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeCALICOBAG.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-
-    </div>
-</div>
-
-<div class="container">
-    <div class="row recommended">
-
-        <div class="col-sm-3 recommended-1">
-            <a href="bag.php" class="recommended-1">
-                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"
-                                             style="width:100%" alt="Image"></div>
-                <div>Add a description of the image here</div>
-            </a>
-        </div>
-
-    </div>
-</div>
-
-<br>
 
 <br><br>
+
+<div class="container" style="border: 5px solid #fff7e6">
+    <div id="map" style="width:100%;height:400px;"></div>
+
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 13.819367, lng: 100.041358},
+                zoom: 18
+            });
+        }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjwf5VsT3XXN4KvB0Bb4_CLFWMjNlKcXI&callback=initMap"
+            async defer></script>
+
+
+</div>
+
+
+<br><br><br>
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
@@ -600,13 +568,12 @@
     //    --------------- Start Drop Down
 
     $(document).ready(function () {
-        $('.dropdown-submenu a.test').on("click", function (e) {
+        $('.dropdown-submenu a.down-2').on("click", function (e) {
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
         });
     });
-
     //    --------------- End Drop Down
 
 </script>

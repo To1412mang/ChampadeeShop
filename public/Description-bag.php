@@ -535,8 +535,8 @@
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a href="mug.php" class="P">แก้ว > </a>
-    <a class="P">Bown And ColourfullChampadeeMug</a>
+    <a href="bag.php" class="P">กระเป๋า > </a>
+    <a class="P">กระเป๋าน้องจำปาดี</a>
 </div>
 
 <!----------------------- End Path ------------------------------->
