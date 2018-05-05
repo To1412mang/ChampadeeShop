@@ -421,7 +421,7 @@
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
     <a href="category.php" class="P">ประเภท > </a>
-    <a class="P">เสื้อคอปก</a>
+    <a class="P">เสื้อยืด</a>
 
 
 </div>
@@ -434,30 +434,29 @@
     <div class="row">
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-shirt.php" class="A recommended-1">
-                <div class="panel-body"><img src="image/Shirt/shirt-2.png" class="img-responsive"
+            <a href="Description-Tshirt.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div class="desc">ChampaDee Shirt</div>
+                <div class="desc">ChampaDee T-shirt</div>
             </a>
         </div>
 
 
-        <!--        <div class="col-sm-3 recommended-1">-->
-        <!--            <a href="test.php" class="A recommended-1">-->
-        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
-        <!--                                             style="width:100%" alt="Image"></div>-->
-        <!--                <div class="desc">Add a description of the image here</div>-->
-        <!--            </a>-->
-        <!--        </div>-->
-        <!---->
-        <!--        <div class="col-sm-3 recommended-1">-->
-        <!--            <a href="test.php" class="A recommended-1">-->
-        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
-        <!--                                             style="width:100%" alt="Image"></div>-->
-        <!--                <div class="desc">Add a description of the image here</div>-->
-        <!--            </a>-->
-        <!--        </div>-->
-        <!---->
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-Tshirt.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtC.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">ChampaDee T-shirt</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-Tshirt.php" class="A recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtV.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div class="desc">ChampaDee V neck T-shirt</div>
+            </a>
+        </div>
         <!--        <div class="col-sm-3 recommended-1">-->
         <!--            <a href="test.php" class="A recommended-1">-->
         <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
@@ -475,10 +474,10 @@
     <div class="row recommended">
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-Tshirt.php" class="recommended-1">
-                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
+            <a href="Description-mugBown.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/BownChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>ChampaDee T-shirt</div>
+                <div>BROWN ChampaDee MUG</div>
             </a>
         </div>
 
@@ -492,10 +491,10 @@
         </div>
 
         <div class="col-sm-3 recommended-1">
-            <a href="Description-mug.php" class="recommended-1">
+            <a href="Description-mugColor.php" class="recommended-1">
                 <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
                                              style="width:100%" alt="Image"></div>
-                <div>COLOURFULL  + BROWN ChampaDee MUG</div>
+                <div>COLOURFULL + BROWN ChampaDee MUG</div>
             </a>
         </div>
 
