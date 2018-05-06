@@ -180,7 +180,7 @@
 
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-bottle.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -212,7 +212,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-bag.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -242,7 +242,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-mug.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png"
                                                      class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
@@ -273,7 +273,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-mugBown.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Mug/BownChampadeeMug.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -464,7 +464,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1" style="margin-top: 20px">
-                    <a href="Description-bag.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -495,7 +495,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1" style="margin-top: 20px">
-                    <a href="Description-mug.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png"
                                                      class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
@@ -528,7 +528,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1" style="margin-top: 20px">
-                    <a href="Description-mugBown.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Mug/BownChampadeeMug.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -775,7 +775,7 @@
 
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-bottle.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -799,7 +799,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-bag.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
@@ -822,7 +822,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-mug.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Mug/Bown+ColourfullChampadeeMug.png"
                                                      class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
@@ -846,7 +846,7 @@
             </div>
             <div class="row recommended">
                 <div class="col-sm-3 recommended-1">
-                    <a href="Description-mugBown.php" class="recommended-1">
+                    <a href="#" class="recommended-1">
                         <div class="panel-body"><img src="image/Mug/BownChampadeeMug.png" class="img-responsive"
                                                      style="width:100%" alt="Image"></div>
                     </a>
