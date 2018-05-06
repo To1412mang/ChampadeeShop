@@ -190,7 +190,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -222,7 +222,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -253,7 +253,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -283,7 +283,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -313,7 +313,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -343,7 +343,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -373,7 +373,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -403,7 +403,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td>5</td>
                             <td>หน่วย</td>
                         </tr>
@@ -785,7 +785,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -809,7 +809,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -833,7 +833,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -856,7 +856,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -879,7 +879,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -902,7 +902,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -925,7 +925,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
@@ -948,7 +948,7 @@
                     <table class="table" style="margin-top: 10px">
                         <tbody class="a">
                         <tr class="success">
-                            <td>จำนวนที่เหลือ</td>
+                            <td>เพิ่มสินค้า</td>
                             <td><input type="number" value="0"></td>
                             <td>หน่วย</td>
                             <td>
