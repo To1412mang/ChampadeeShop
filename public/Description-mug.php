@@ -260,11 +260,24 @@
         /*---------------------- End path --------------------------*/
 
         /*--------------------- Start DropDown ------------------------*/
+        /*เพิ่มในส่วน login register */
         .down {
             padding: 8px;
             margin-left: 6px;
+            text-decoration: none;
 
         }
+        a.down{
+            text-decoration: none;
+            color: #a6a6a6;
+        }
+        a.down:hover{
+            color: #f1f1f1;
+        }
+        ul.down{
+            font-size: 16pt;
+        }
+        /*เพิ่มในส่วน login register */
 
         .down-1, .down-1:Hover {
             text-decoration: none;
@@ -519,9 +532,22 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><span
-                                class="glyphicon glyphicon-user"></span> ลงชื่อเข้าใช้</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a></li>
+                <!-----------------Start Register and Popup---------------->
+
+                <li>
+                    <div class="dropdown down">
+                        <a href="#" data-toggle="dropdown" class="down">ลงชื่อเข้าใช้</a>
+                        <ul class="dropdown-menu down" style="background: #fff2e6">
+                            <li><a href="login.php">Login</a></li>
+                            <li><a href="register.php">สมัครสมาชิก</a></li>
+                        </ul>
+                </li>
+
+                <!-----------------End Register---------------->
+                <li><div class="down">
+                        <a href="#" class="down"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
@@ -726,41 +752,6 @@
 </footer>
 <!-------------------------------- End Footer ----------------------------->
 
-<!-- Start Account Register -->
-<div id="id01" class="modal">
-    <span onclick="document.getElementById('id01').style.display='none'" class="close"
-          title="Close Modal">&times;</span>
-    <form class="modal-content" action="/action_page.php"> <!-- แก้ตรงนี้ด้วย -->
-        <div class="container">
-            <h1>Sign Up</h1>
-            <p>Please fill in this form to create an account.</p>
-            <hr>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-
-            <label for="psw-repeat"><b>Repeat Password</b></label>
-            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-            <label>
-                <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-            </label>
-
-            <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-            <div class="clearfix">
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">
-                    Cancel
-                </button>
-                <button type="submit" class="signupbtn">Sign Up</button>
-            </div>
-        </div>
-    </form>
-</div>
-
-<!-- End Account Register -->
 
 <!-------------- Start Top ----------------->
 <button id="myBtn" class="buttonTop" onclick="topFunction()" title="Go to top"><i class="fa fa-angle-double-up"></i>
@@ -768,19 +759,7 @@
 <!-------------- End Top ----------------->
 
 <script>
-    //
-    <!-- Start Account Register -->
-    // Get the modal
-    var modal = document.getElementById('id01');
 
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    };
-    //
-    <!-- End Account Register -->
 
     //    ----------- Start Top -------------
 
