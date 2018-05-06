@@ -12,7 +12,7 @@
     <style>
 
         body {
-             font-family: "TH Sarabun New", Arial, Helvetica, sans-serif;
+             font-family: "TH Sarabun New","Browallia New", Arial, Helvetica, sans-serif;
 
          }
 
