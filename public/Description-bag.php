@@ -407,8 +407,9 @@
                             <li class="dropdown-submenu">
                                 <a class="down-2">เสื้อ<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
-                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
+                                    <li><a href="TandShirt.php" style="font-size: 16pt">เสื้อทั้งหมด</a></li>
+                                    <li><a href="shirt.php" style="font-size: 16pt">เสื้อคอปก</a></li>
+                                    <li><a href="T-shirt.php" style="font-size: 16pt">เสื้อยืด</a></li>
                                 </ul>
                             </li>
                         </ul>
