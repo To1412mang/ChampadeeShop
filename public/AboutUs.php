@@ -240,6 +240,9 @@
 
         }
 
+        img.i{
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body>
@@ -333,20 +336,22 @@
 
 <br><br>
 
+
 <div class="container">
     <h1 class="H1"><b>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร</b><br>Faculty of Science, Silpakorn University
     </h1>
     <br><br>
     <div class="row">
 
-        <div class="col-sm-3 recommended-1" style="font-size: 2.5vw">
+        <div class="col-sm-3 recommended-1" style="font-size: 2vw">
             <p><b>Champadee Shop เป็นเว็บไซต์สำหรับขายสินค้าที่คณะวิทยาศาสตร์ โดยสินค้าที่นำมาขายจะร่วมกับศิษย์เก่า
                     และนักศึกษาของคณะวิทยาศาสตร์</b></p>
+            <p style="color: #ff9933"><b>สามารถติดต่อขอซื้อสินค้าได้ที่ สำนักงานคณบดีคณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร จังหวัดนครปฐม ชั้น 1 อาคารวิทยาศาสตร์ 1 ในวันเวลาราชการ</b></p>
         </div>
 
         <div class="col-sm-9">
 
-            <img src="image/science.jpg" class="img-responsive"
+            <img src="image/science.jpg" class="img-responsive i"
                  style="width:100%" alt="Image">
 
         </div>
