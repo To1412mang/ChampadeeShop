@@ -342,32 +342,6 @@
 
         /* -----------------------------------stop image slide--------------------------------------------*/
 
-        /*------------------------- Start search ------------------------------*/
-
-        input.search[type=text] {
-            width: 120px;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            font-size: 14pt;
-            background-color: white;
-            background-image: url('image/magnifying-glass.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
-            padding: 12px 20px 12px 40px;
-            -webkit-transition: width 0.4s ease-in-out;
-            transition: width 0.4s ease-in-out;
-            margin-bottom: 10px;
-            margin-left: 5px;
-        }
-
-        input[type=text]:focus {
-            width: 100%;
-        }
-
-
-        /*------------------------- End search ------------------------------*/
-
 
 
 
@@ -417,10 +391,11 @@
                 </li>
                 <li><a href="#" class="B">ขั้นตอนการชำระเงิน</a></li>
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
-                <li><form class="search">
-                        <input class="search" type="text" name="search" placeholder="Search..">
-                    </form>
+                <!----------------------- Start Search ------------------------------>
+                <li>
+                    <a href="search-code.php" style="padding-top: 10px"><i class="fa fa-search"></i> ค้นหาสินค้า</a>
                 </li>
+                <!----------------------- End Search ------------------------------>
 
             </ul>
 

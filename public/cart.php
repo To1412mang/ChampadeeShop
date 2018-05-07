@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>เกี่ยวกับเรา</title>
+    <title>กระเป๋าน้องจำปาดี</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -20,6 +20,7 @@
             box-sizing: border-box;
 
         }
+
 
         /* Remove the navbar's default rounded borders and increase the bottom margin */
         .navbar {
@@ -60,14 +61,29 @@
             height: auto;
             margin-right: 10px;
             display: block;
-            /*margin-left: 10px;*/
-            /*margin-right: auto;*/
             position: relative;
         }
 
         .collapse {
             margin-top: 10px;
         }
+
+        /* คำอธิบายใต้ภาพ */
+        div.desc {
+            /*padding: 15px;*/
+            text-align: center;
+            margin-bottom: 30px;
+            text-decoration: none;
+            font-size: 16pt;
+
+        }
+
+        .A, .A:hover {
+            text-decoration: none;
+            color: #ffcc00;
+        }
+
+        /* End คำอธิบายใต้ภาพ */
 
         .navbar-toggle {
             margin-top: 20px;
@@ -139,19 +155,30 @@
 
         /*---------------------- Start recomment ------------------------*/
 
-        .recommended-1 {
-            text-align: center;
-            /*margin-bottom: 10px;*/
-            color: #009933;
-            background: #fff7e6;
-            text-decoration: none;
-            /*font-size: 16pt;*/
-            margin-top: 20px;
+        .recommended {
+            /*background: #f2f2f2;*/
+            border: 5px solid #fff7e6;
+            border-radius: 5px;
+            margin-top: 5px;
+
         }
 
-        h1.recommended-1 {
-            color: black;
+        div.recommended-1:Hover, a.recommended-1:Hover {
+            background: #fff2e6;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16pt;
+            /*padding: 5px;*/
+            color: #e67300;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
 
+        .recommended-1, a.recommended-1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #ffcc00;
+            text-decoration: none;
+            font-size: 16pt;
         }
 
         /*---------------------- End recomment ------------------------*/
@@ -175,9 +202,9 @@
             font-size: 16pt;
         }
         /*เพิ่มในส่วน login register */
-
         .down-1, .down-1:Hover {
             text-decoration: none;
+            /*border: 5px solid #f2f2f2;*/
             color: #a6a6a6;
         }
 
@@ -202,24 +229,58 @@
         }
 
         /*--------------------- End DropDown ------------------------*/
-
-        /*-----------------------Map-----------------------*/
-
-        #map {
-            height: 100%;
-        }
-
-
-
         .H1 {
             border-bottom: 6px solid #99cc00;
             border-radius: 3px;
-
         }
 
-        img.i{
-            margin-top: 50px;
+        .dot {
+            height: 25px;
+            width: 25px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            text-decoration: none;
+            box-shadow: 3px 3px 6px 0 rgba(0, 0, 0, 0.2);
+            margin-top: 10px;
         }
+
+        a.dot1, a.dot1:Hover {
+            text-decoration: none;
+        }
+        h5 {
+            margin-top: 100px;
+            font-size: 16pt;
+            color: #e67300;
+        }
+        h5:hover{
+            color: black;
+        }
+
+        /*------------------------- Start search ------------------------------*/
+
+        input.search[type=text] {
+            width: 120px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 14pt;
+            background-color: white;
+            background-image: url('image/magnifying-glass.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            -webkit-transition: width 0.4s ease-in-out;
+            transition: width 0.4s ease-in-out;
+            margin-bottom: 10px;
+            margin-left: 5px;
+        }
+
+        input[type=text]:focus {
+            width: 100%;
+        }
+
+        /*------------------------- End search ------------------------------*/
     </style>
 </head>
 <body>
@@ -240,6 +301,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a href="index.php"> <img src="image/logo-1.png" class="responsive-1"></a>
+            <!--            <a class="navbar-brand" href="#">Logo</a>-->
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -268,7 +330,9 @@
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
                 <!----------------------- Start Search ------------------------------>
                 <li>
-                    <a href="search-code.php" style="padding-top: 10px"><i class="fa fa-search"></i> ค้นหาสินค้า</a>
+                    <form class="search">
+                        <input class="search" type="text" name="search" placeholder="Search..">
+                    </form>
                 </li>
                 <!----------------------- End Search ------------------------------>
 
@@ -288,7 +352,7 @@
 
                 <!-----------------End Register---------------->
                 <li><div class="down">
-                        <a href="cart.php" class="down"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a>
+                        <a href="#" class="down"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a>
                     </div>
                 </li>
             </ul>
@@ -298,11 +362,13 @@
 
 <!---------------------------------- End header ----------------------------------------------->
 
-<!---------------------------------- Start Path ----------------------------------------------->
+<!---------------------------------- Start Path -----------------------------------------------
 
 <div class="path">
     <a href="index.php" class="P">หน้าแรก > </a>
-    <a class="P">เกี่ยวกับเรา </a>
+    <a href="category.php" class="P">ประเภท > </a>
+    <a class="P">กระเป๋าน้องจำปาดี</a>
+
 
 </div>
 
@@ -310,54 +376,87 @@
 
 
 <br><br>
-
-
 <div class="container">
-    <h1 class="H1"><b>คณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร</b><br>Faculty of Science, Silpakorn University
-    </h1>
-    <br><br>
     <div class="row">
 
-        <div class="col-sm-3" style="font-size: 2vw">
-            <p><b>Champadee Shop เป็นเว็บไซต์สำหรับขายสินค้าที่คณะวิทยาศาสตร์ โดยสินค้าที่นำมาขายจะร่วมกับศิษย์เก่า
-                    และนักศึกษาของคณะวิทยาศาสตร์</b></p>
-            <p style="color: #ff9933"><b>สามารถติดต่อขอซื้อสินค้าได้ที่ สำนักงานคณบดีคณะวิทยาศาสตร์ มหาวิทยาลัยศิลปากร จังหวัดนครปฐม ชั้น 1 อาคารวิทยาศาสตร์ 1 ในวันเวลาราชการ</b></p>
+<!--        <div class="col-sm-3 recommended-1">-->
+<!--            <a href="Description-bag.php" class="A recommended-1">-->
+<!--                <div class="panel-body"><img src="image/Bag/ChampadeeCALICOBAG.png" class="img-responsive"-->
+<!--                                             style="width:100%" alt="Image"></div>-->
+<!--                <div class="desc">ChampaDee CALICO BAG</div>-->
+<!--            </a>-->
+<!--        </div>-->
+
+
+
+                <div class="col-sm-9">
+                    <?php require_once('shopping_basket.php'); ?>
+                </div>
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+        <!---->
+        <!--        <div class="col-sm-3 recommended-1">-->
+        <!--            <a href="test.php" class="A recommended-1">-->
+        <!--                <div class="panel-body"><img src="image/ChampadeeWATERBOTTLES.png" class="img-responsive"-->
+        <!--                                             style="width:100%" alt="Image"></div>-->
+        <!--                <div class="desc">Add a description of the image here</div>-->
+        <!--            </a>-->
+        <!--        </div>-->
+
+
+    </div>
+    <br><br><br>
+    <br><br><br>
+    <h1 class="H1">สินค้าแนะนำ</h1>
+
+    <div class="row recommended">
+
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-Tshirt.php" class="recommended-1">
+                <div class="panel-body"><img src="image/T-Shirt/T-shirtMix.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>ChampaDee T-shirt</div>
+            </a>
         </div>
 
-        <div class="col-sm-9">
 
-            <img src="image/science.jpg" class="img-responsive i"
-                 style="width:100%" alt="Image">
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-bottle.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Bottle/ChampadeeWATERBOTTLES.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>ChampaDee CALICO BAG</div>
+            </a>
+        </div>
 
+        <div class="col-sm-3 recommended-1">
+            <a href="Description-mug.php" class="recommended-1">
+                <div class="panel-body"><img src="image/Mug/ColourfullChampadeeMug.png" class="img-responsive"
+                                             style="width:100%" alt="Image"></div>
+                <div>COLOURFULL  + BROWN ChampaDee MUG</div>
+            </a>
+        </div>
+
+        <div class="col-sm-3 dot1" style="text-align:center">
+            <a href="category.php" class="dot1">
+                <h5><b>เพิ่มเติม</b></h5>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </a>
         </div>
 
     </div>
 </div>
+<br>
 
 <br><br>
-
-<div class="container" style="border: 5px solid #fff7e6">
-    <div id="map" style="width:100%;height:400px;"></div>
-
-    <script>
-        var map;
-
-        function initMap() {
-            map = new google.maps.Map(document.getElementById('map'), {
-                center: {lat: 13.819367, lng: 100.041358},
-                zoom: 18
-            });
-        }
-    </script>
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjwf5VsT3XXN4KvB0Bb4_CLFWMjNlKcXI&callback=initMap"
-            async defer></script>
-
-
-</div>
-
-
-<br><br><br>
 
 <!-------------------------------- Start Footer ----------------------------->
 <footer class="container-fluid text-center">
@@ -408,7 +507,6 @@
 
 <script>
 
-    var b1 = document.getElementById('button1');
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
@@ -433,13 +531,14 @@
 
     //    --------------- Start Drop Down
 
-    $(document).ready(function () {
-        $('.dropdown-submenu a.down-2').on("click", function (e) {
+    $(document).ready(function(){
+        $('.dropdown-submenu a.down-2').on("click", function(e){
             $(this).next('ul').toggle();
             e.stopPropagation();
             e.preventDefault();
         });
     });
+
     //    --------------- End Drop Down
 
 </script>

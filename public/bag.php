@@ -330,9 +330,7 @@
                 <li><a href="AboutUs.php" class="B">เกี่ยวกับเรา</a></li>
                 <!----------------------- Start Search ------------------------------>
                 <li>
-                    <form class="search">
-                        <input class="search" type="text" name="search" placeholder="Search..">
-                    </form>
+                    <a href="search-code.php" style="padding-top: 10px"><i class="fa fa-search"></i> ค้นหาสินค้า</a>
                 </li>
                 <!----------------------- End Search ------------------------------>
 
@@ -352,7 +350,7 @@
 
                 <!-----------------End Register---------------->
                 <li><div class="down">
-                        <a href="#" class="down"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a>
+                        <a href="cart.php" class="down"><span class="glyphicon glyphicon-shopping-cart"></span> ตระกร้าสินค้า</a>
                     </div>
                 </li>
             </ul>
